@@ -1,0 +1,148 @@
+# ============================================================
+# TEMPLATE COMMIT MESSAGE
+# T Trading (Tenang Trading)
+# ============================================================
+# Format: <type>(<scope>): <subject>
+#
+# <body>
+#
+# <footer>
+# ============================================================
+
+# ────────────────────────────────────────────────────────────
+# TYPE (wajib dipilih salah satu)
+# ────────────────────────────────────────────────────────────
+# feat     : Fitur baru
+# fix      : Perbaikan bug
+# docs     : Perubahan dokumentasi
+# style    : Perubahan styling (format, spasi, titik koma)
+# refactor : Refactoring kode (bukan fitur, bukan bug)
+# perf     : Peningkatan performa
+# test     : Menambah atau memperbaiki test
+# build    : Perubahan build system atau dependensi
+# ci       : Perubahan CI/CD
+# chore    : Maintenance (update dependensi, dll.)
+# revert   : Mengembalikan commit sebelumnya
+#
+# ────────────────────────────────────────────────────────────
+# SCOPE (opsional, pilih salah satu)
+# ────────────────────────────────────────────────────────────
+# dashboard : Halaman Dashboard
+# simulasi  : Halaman Simulasi
+# jurnal    : Halaman Jurnal
+# analisis  : Halaman Analisis
+# dosa      : Halaman 7 Dosa Dagang
+# meditasi  : Halaman Meditasi
+# kalkulator: Halaman Kalkulator
+# amal      : Halaman Amal
+# pengaturan: Halaman Pengaturan
+# ui        : Komponen UI
+# layout    : Komponen Layout
+# shared    : Komponen Shared
+# hooks     : Custom Hooks
+# services  : Services
+# store     : State Management
+# utils     : Utilitas
+# data      : Data statis
+# config    : Konfigurasi
+# docs      : Dokumentasi
+# deps      : Dependensi
+#
+# ────────────────────────────────────────────────────────────
+# SUBJECT (wajib)
+# ────────────────────────────────────────────────────────────
+# - Gunakan kalimat imperatif ("tambah" bukan "menambahkan")
+# - Jangan akhiri dengan titik
+# - Maksimal 50 karakter
+# - Huruf kecil semua
+#
+# ────────────────────────────────────────────────────────────
+# BODY (opsional)
+# ────────────────────────────────────────────────────────────
+# - Jelaskan "apa" dan "mengapa", bukan "bagaimana"
+# - Pisahkan dari subject dengan satu baris kosong
+# - Maksimal 72 karakter per baris
+#
+# ────────────────────────────────────────────────────────────
+# FOOTER (opsional)
+# ────────────────────────────────────────────────────────────
+# - Referensi issue: "Closes #123", "Fixes #456"
+# - Breaking change: "BREAKING CHANGE: ..."
+# - Co-author: "Co-authored-by: Nama <email>"
+#
+# ────────────────────────────────────────────────────────────
+# CONTOH COMMIT YANG BENAR
+# ────────────────────────────────────────────────────────────
+#
+# feat(dashboard): tambah widget skor 4 pilar
+#
+# Menambahkan widget yang menampilkan skor 4 pilar
+# Trader Legendaris dengan progress bar dan rekomendasi.
+#
+# Closes #12
+#
+# ────────────────────────────────────────────────────────────
+# feat(jurnal): tambah form entri jurnal harian
+#
+# Form ini memungkinkan pengguna mencatat:
+# - Kondisi pasar (bullish/bearish/sideways)
+# - Emosi (tenang/cemas/serakah/ragu)
+# - Skor 4 pilar (1-10)
+# - Profit/loss dan catatan refleksi
+#
+# Fitur ini juga otomatis menghitung amal 2% dari profit.
+#
+# Closes #15
+#
+# ────────────────────────────────────────────────────────────
+# fix(dosa): perbaiki deteksi dosa keserakahan
+#
+# Sebelumnya, deteksi keserakahan hanya berdasarkan profit > target.
+# Sekarang, deteksi juga mempertimbangkan apakah pengguna sudah
+# menjual atau belum.
+#
+# Fixes #20
+#
+# ────────────────────────────────────────────────────────────
+# docs(readme): perbarui bagian cara menjalankan
+#
+# Menambahkan langkah-langkah:
+# 1. Clone repository
+# 2. Install dependencies
+# 3. Jalankan development server
+# 4. Build untuk production
+#
+# ────────────────────────────────────────────────────────────
+# chore(deps): update react ke v18.3.1
+#
+# Update React dari v18.2.0 ke v18.3.1 untuk mendapatkan
+# perbaikan bug dan peningkatan performa.
+#
+# ────────────────────────────────────────────────────────────
+# style(ui): format ulang Card.jsx dengan Prettier
+#
+# ────────────────────────────────────────────────────────────
+# refactor(store): pisahkan authStore dari portfolioStore
+#
+# Memisahkan store untuk meningkatkan modularitas dan
+# memudahkan testing.
+#
+# ────────────────────────────────────────────────────────────
+# perf(dashboard): optimasi render dengan useMemo
+#
+# Menggunakan useMemo untuk mencegah perhitungan ulang
+# skor 4 pilar saat render.
+#
+# ────────────────────────────────────────────────────────────
+# test(utils): tambah test untuk hitungLot
+#
+# Menambahkan unit test untuk fungsi hitungLot dengan
+# berbagai skenario.
+#
+# ────────────────────────────────────────────────────────────
+# ci(deploy): tambah workflow GitHub Actions
+#
+# Menambahkan workflow untuk deploy otomatis ke GitHub Pages
+# setiap kali push ke branch main.
+#
+# ────────────────────────────────────────────────────────────
