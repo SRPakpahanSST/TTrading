@@ -1,0 +1,64 @@
+# EditorConfig: https://EditorConfig.org
+# Digunakan untuk konsistensi gaya kode di berbagai editor & IDE
+
+# Konfigurasi utama
+root = true
+
+# Semua file
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+max_line_length = 100
+
+# File JavaScript/TypeScript/JSX
+[*.{js,jsx,ts,tsx}]
+indent_size = 2
+quote_type = single
+max_line_length = 100
+
+# File JSON
+[*.json]
+indent_size = 2
+
+# File CSS/SCSS
+[*.{css,scss}]
+indent_size = 2
+
+# File HTML
+[*.html]
+indent_size = 2
+
+# File Markdown
+[*.md]
+trim_trailing_whitespace = false
+max_line_length = off
+
+# File YAML
+[*.{yml,yaml}]
+indent_size = 2
+
+# File Python (jika ada)
+[*.py]
+indent_size = 4
+max_line_length = 88
+
+# File Shell
+[*.sh]
+indent_size = 2
+end_of_line = lf
+
+# File Makefile
+[Makefile]
+indent_style = tab
+
+# File .env
+[.env*]
+indent_size = 2
+
+# File konfigurasi
+[*.{toml,ini,cfg}]
+indent_size = 2
