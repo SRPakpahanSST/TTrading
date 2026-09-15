@@ -19,3 +19,38 @@
     ["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
   ]
 }
+
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact"
+  ],
+  "prettier.requireConfig": true,
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
+  "tailwindCSS.experimental.classRegex": [
+    ["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ],
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "path-intellisense.mappings": {
+    "@": "${workspaceRoot}/src",
+    "@components": "${workspaceRoot}/src/components",
+    "@pages": "${workspaceRoot}/src/pages",
+    "@hooks": "${workspaceRoot}/src/hooks",
+    "@services": "${workspaceRoot}/src/services",
+    "@store": "${workspaceRoot}/src/store",
+    "@utils": "${workspaceRoot}/src/utils",
+    "@data": "${workspaceRoot}/src/data",
+    "@assets": "${workspaceRoot}/src/assets"
+  }
+}
