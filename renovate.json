@@ -1,0 +1,267 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":dependencyDashboard",
+    ":semanticCommits",
+    ":separateMajorReleases",
+    ":combinePatchMinorReleases",
+    ":ignoreUnstable",
+    ":prImmediately",
+    ":automergeDisabled",
+    ":disableRateLimiting"
+  ],
+  "timezone": "Asia/Jakarta",
+  "schedule": [
+    "before 6am on Monday"
+  ],
+  "labels": [
+    "dependencies",
+    "renovate"
+  ],
+  "assignees": [
+    "@USERNAME"
+  ],
+  "reviewers": [
+    "@USERNAME"
+  ],
+  "rangeStrategy": "bump",
+  "separateMultipleMajor": true,
+  "separateMajorMinor": true,
+  "separateMinorPatch": false,
+  "rebaseWhen": "conflicted",
+  "prConcurrentLimit": 5,
+  "prHourlyLimit": 2,
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": [
+      "before 6am on the first day of the month"
+    ]
+  },
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "labels": [
+      "security",
+      "dependencies"
+    ],
+    "assignees": [
+      "@USERNAME"
+    ],
+    "schedule": [
+      "at any time"
+    ]
+  },
+  "osvVulnerabilityAlerts": true,
+  "packageRules": [
+    {
+      "description": "Auto-merge patch updates untuk dependensi non-breaking",
+      "matchUpdateTypes": [
+        "patch"
+      ],
+      "matchCurrentVersion": "!/^0/",
+      "automerge": true,
+      "automergeType": "pr",
+      "platformAutomerge": true,
+      "labels": [
+        "automerge",
+        "patch"
+      ]
+    },
+    {
+      "description": "Auto-merge minor updates untuk devDependencies",
+      "matchDepTypes": [
+        "devDependencies"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "automerge": true,
+      "automergeType": "pr",
+      "platformAutomerge": true,
+      "labels": [
+        "automerge",
+        "devDependencies"
+      ]
+    },
+    {
+      "description": "Grup semua update React",
+      "matchPackageNames": [
+        "react",
+        "react-dom",
+        "react-router-dom"
+      ],
+      "groupName": "React",
+      "labels": [
+        "react"
+      ]
+    },
+    {
+      "description": "Grup semua update Vite",
+      "matchPackageNames": [
+        "vite",
+        "@vitejs/plugin-react"
+      ],
+      "groupName": "Vite",
+      "labels": [
+        "vite"
+      ]
+    },
+    {
+      "description": "Grup semua update Tailwind",
+      "matchPackageNames": [
+        "tailwindcss",
+        "postcss",
+        "autoprefixer"
+      ],
+      "groupName": "Tailwind CSS",
+      "labels": [
+        "tailwind"
+      ]
+    },
+    {
+      "description": "Grup semua update ESLint",
+      "matchPackageNames": [
+        "eslint",
+        "@eslint/js",
+        "eslint-plugin-react",
+        "eslint-plugin-react-hooks",
+        "eslint-plugin-react-refresh",
+        "globals"
+      ],
+      "groupName": "ESLint",
+      "labels": [
+        "eslint"
+      ]
+    },
+    {
+      "description": "Grup semua update Prettier",
+      "matchPackageNames": [
+        "prettier",
+        "prettier-plugin-tailwindcss"
+      ],
+      "groupName": "Prettier",
+      "labels": [
+        "prettier"
+      ]
+    },
+    {
+      "description": "Grup semua update Chart",
+      "matchPackageNames": [
+        "recharts"
+      ],
+      "groupName": "Charts",
+      "labels": [
+        "charts"
+      ]
+    },
+    {
+      "description": "Grup semua update State Management",
+      "matchPackageNames": [
+        "zustand"
+      ],
+      "groupName": "State Management",
+      "labels": [
+        "state"
+      ]
+    },
+    {
+      "description": "Grup semua update Date",
+      "matchPackageNames": [
+        "date-fns"
+      ],
+      "groupName": "Date Utilities",
+      "labels": [
+        "date"
+      ]
+    },
+    {
+      "description": "Pin GitHub Actions ke versi digest",
+      "matchManagers": [
+        "github-actions"
+      ],
+      "pinDigests": true,
+      "labels": [
+        "github-actions"
+      ]
+    },
+    {
+      "description": "Jangan update dependensi major tanpa review manual",
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "automerge": false,
+      "labels": [
+        "major",
+        "needs-review"
+      ],
+      "assignees": [
+        "@USERNAME"
+      ]
+    },
+    {
+      "description": "Keamanan: prioritas tinggi untuk vulnerability alerts",
+      "matchDatasources": [
+        "osv"
+      ],
+      "labels": [
+        "security",
+        "priority-high"
+      ],
+      "prPriority": 10,
+      "automerge": false
+    }
+  ],
+  "npm": {
+    "enabled": true,
+    "rangeStrategy": "bump",
+    "stabilityDays": 3,
+    "prCreation": "not-pending",
+    "packageRules": [
+      {
+        "description": "Tunda update selama 3 hari untuk menghindari bug",
+        "matchUpdateTypes": [
+          "minor",
+          "patch"
+        ],
+        "stabilityDays": 3
+      }
+    ]
+  },
+  "github-actions": {
+    "enabled": true,
+    "pinDigests": true
+  },
+  "docker": {
+    "enabled": false
+  },
+  "regexManagers": [
+    {
+      "description": "Update versi Node.js di .nvmrc",
+      "fileMatch": [
+        "^\\.nvmrc$"
+      ],
+      "matchStrings": [
+        "(?<currentValue>\\d+\\.\\d+\\.\\d+)"
+      ],
+      "depNameTemplate": "node",
+      "datasourceTemplate": "node-version"
+    }
+  ],
+  "ignoreDeps": [],
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/build/**",
+    "**/coverage/**"
+  ],
+  "ignorePresets": [
+    ":ignoreModulesAndTests"
+  ],
+  "prBodyTemplate": "{{{header}}}{{{table}}}{{{notes}}}{{{warnings}}}{{{changelogs}}}{{{controls}}}{{{footer}}}",
+  "prFooter": "---\n\n🌱 **Renovate Bot** untuk **T Trading (Tenang Trading)**\n\n*\"Cuan Berkah, Dampak Nyata\"*\n\n[Lihat Dashboard Renovate](https://github.com/USERNAME/tenang-trading/issues/1)",
+  "dependencyDashboard": true,
+  "dependencyDashboardTitle": "🤖 Renovate Dependency Dashboard",
+  "dependencyDashboardHeader": "> **Dashboard ini menampilkan semua update dependensi yang tersedia.**\n> Centang kotak untuk memicu update, atau biarkan Renovate bekerja otomatis.\n\n---\n\n🌱 **T Trading (Tenang Trading)**\n\n*\"Cuan Berkah, Dampak Nyata\"*\n\n---",
+  "dependencyDashboardFooter": "---\n\n🌱 **T Trading (Tenang Trading)**\n\n*\"Cuan Berkah, Dampak Nyata\"*"
+}
