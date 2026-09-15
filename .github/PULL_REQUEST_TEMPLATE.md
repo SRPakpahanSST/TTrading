@@ -1,3 +1,4 @@
+```markdown
 <!--
 Terima kasih telah berkontribusi pada T Trading (Tenang Trading)!
 Silakan isi template di bawah ini dengan lengkap.
