@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📚 Dokumentasi
+    url: https://github.com/USERNAME/tenang-trading/blob/main/README.md
+    about: Baca dokumentasi proyek
+  - name: 💬 Diskusi Komunitas
+    url: https://github.com/USERNAME/tenang-trading/discussions
+    about: Diskusi umum, tanya jawab, dan ide
+  - name: 🔒 Laporan Keamanan
+    url: https://github.com/USERNAME/tenang-trading/security/advisories/new
+    about: Laporkan kerentanan keamanan secara private
+  - name: 🤝 Panduan Kontribusi
+    url: https://github.com/USERNAME/tenang-trading/blob/main/CONTRIBUTING.md
+    about: Baca panduan kontribusi
