@@ -1,3 +1,4 @@
+```markdown
 ---
 name: ✨ Permintaan Fitur
 about: Usulkan fitur baru untuk T Trading
