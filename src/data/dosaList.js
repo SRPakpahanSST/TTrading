@@ -1,0 +1,51 @@
+export const dosaList = [
+  {
+    nama: 'Keserakahan',
+    icon: '🤑',
+    deskripsi: 'Ingin untung besar cepat, tidak mau ambil profit.',
+    pilar: 'Dewa Fundamental',
+    latihan: 'Simulasi: Jual di target vs tahan',
+  },
+  {
+    nama: 'Ketakutan',
+    icon: '😨',
+    deskripsi: 'Panik saat harga turun, cut loss di dasar.',
+    pilar: 'Raja Makro',
+    latihan: 'Simulasi: Cut loss vs hold',
+  },
+  {
+    nama: 'Harapan',
+    icon: '🙏',
+    deskripsi: 'Berharap harga naik terus padahal tren turun.',
+    pilar: 'Sentuhan Emas',
+    latihan: 'Simulasi: Hold vs cut',
+  },
+  {
+    nama: 'Penyesalan',
+    icon: '😔',
+    deskripsi: 'Menyesal tidak beli di bawah, menyesal jual terlalu cepat.',
+    pilar: 'Raja Makro',
+    latihan: 'Simulasi: FOMO vs sabar',
+  },
+  {
+    nama: 'Kesombongan',
+    icon: '😤',
+    deskripsi: 'Merasa paling benar, tidak mau lihat data.',
+    pilar: 'Dewa Fundamental',
+    latihan: 'Simulasi: Analisis vs feeling',
+  },
+  {
+    nama: 'Keraguan',
+    icon: '🤔',
+    deskripsi: 'Tidak berani entry saat sinyal muncul.',
+    pilar: 'Pembunuh Jangka Pendek',
+    latihan: 'Simulasi: Entry vs tunggu',
+  },
+  {
+    nama: 'Kebingungan',
+    icon: '😵',
+    deskripsi: 'Tidak tahu arah pasar, terlalu banyak informasi.',
+    pilar: 'Dewa Fundamental',
+    latihan: 'Simulasi: Fokus vs multitasking',
+  },
+]
