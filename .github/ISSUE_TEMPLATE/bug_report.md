@@ -1,3 +1,4 @@
+```markdown
 ---
 name: 🐛 Laporan Bug
 about: Laporkan bug yang Anda temukan
