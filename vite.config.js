@@ -5,7 +5,7 @@ import path from 'path'
 export default defineConfig({
   plugins: [react()],
   base: process.env.GITHUB_PAGES === 'true'
-    ? '/tenang-trading/'
+    ? '/TTrading/'
     : '/',
   resolve: {
     alias: {
