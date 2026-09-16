@@ -1,0 +1,406 @@
+{
+  "versi": "TB",
+  "terakhirDiperbarui": "2026-09-16",
+  "ayat": [
+    {
+      "id": 1,
+      "kitab": "Yohanes",
+      "pasal": 3,
+      "ayat": 16,
+      "tema": "Kasih",
+      "teks": "Karena begitu besar kasih Allah akan dunia ini, sehingga Ia telah mengaruniakan Anak-Nya yang tunggal, supaya setiap orang yang percaya kepada-Nya tidak binasa, melainkan beroleh hidup yang kekal."
+    },
+    {
+      "id": 2,
+      "kitab": "Filipi",
+      "pasal": 4,
+      "ayat": 13,
+      "tema": "Kekuatan",
+      "teks": "Segala perkara dapat kutanggung di dalam Dia yang memberi kekuatan kepadaku."
+    },
+    {
+      "id": 3,
+      "kitab": "Mazmur",
+      "pasal": 23,
+      "ayat": 1,
+      "tema": "Penghiburan",
+      "teks": "TUHAN adalah gembalaku, takkan kekurangan aku."
+    },
+    {
+      "id": 4,
+      "kitab": "Amsal",
+      "pasal": 3,
+      "ayat": 5,
+      "tema": "Kepercayaan",
+      "teks": "Percayalah kepada TUHAN dengan segenap hatimu, dan janganlah bersandar kepada pengertianmu sendiri."
+    },
+    {
+      "id": 5,
+      "kitab": "Yesaya",
+      "pasal": 41,
+      "ayat": 10,
+      "tema": "Kekuatan",
+      "teks": "Janganlah takut, sebab Aku menyertai engkau, janganlah bimbang, sebab Aku ini Allahmu; Aku akan meneguhkan, bahkan akan menolong engkau."
+    },
+    {
+      "id": 6,
+      "kitab": "Yosua",
+      "pasal": 1,
+      "ayat": 9,
+      "tema": "Kekuatan",
+      "teks": "Bukankah telah Kuperintahkan kepadamu: kuatkan dan teguhkanlah hatimu? Janganlah kecut dan tawar hati, sebab TUHAN, Allahmu, menyertai engkau, ke manapun engkau pergi."
+    },
+    {
+      "id": 7,
+      "kitab": "Matius",
+      "pasal": 11,
+      "ayat": 28,
+      "tema": "Penghiburan",
+      "teks": "Marilah kepada-Ku, semua yang letih lesu dan berbeban berat, Aku akan memberi kelegaan kepadamu."
+    },
+    {
+      "id": 8,
+      "kitab": "Mazmur",
+      "pasal": 119,
+      "ayat": 105,
+      "tema": "Bimbingan",
+      "teks": "Firman-Mu itu pelita bagi kakiku dan terang bagi jalanku."
+    },
+    {
+      "id": 9,
+      "kitab": "Roma",
+      "pasal": 8,
+      "ayat": 28,
+      "tema": "Penghiburan",
+      "teks": "Kita tahu sekarang, bahwa Allah turut bekerja dalam segala sesuatu untuk mendatangkan kebaikan bagi mereka yang mengasihi Dia, yaitu bagi mereka yang terpanggil sesuai dengan rencana Allah."
+    },
+    {
+      "id": 10,
+      "kitab": "Yeremia",
+      "pasal": 29,
+      "ayat": 11,
+      "tema": "Harapan",
+      "teks": "Sebab Aku ini mengetahui rancangan-rancangan apa yang ada pada-Ku mengenai kamu, demikianlah firman TUHAN, yaitu rancangan damai sejahtera dan bukan rancangan kecelakaan, untuk memberikan kepadamu hari depan yang penuh harapan."
+    },
+    {
+      "id": 11,
+      "kitab": "Mazmur",
+      "pasal": 37,
+      "ayat": 5,
+      "tema": "Kepercayaan",
+      "teks": "Serahkanlah hidupmu kepada TUHAN dan percayalah kepada-Nya, dan Ia akan bertindak."
+    },
+    {
+      "id": 12,
+      "kitab": "1 Korintus",
+      "pasal": 10,
+      "ayat": 13,
+      "tema": "Pencobaan",
+      "teks": "Pencobaan-pencobaan yang kamu alami ialah pencobaan-pencobaan biasa, yang tidak melebihi kekuatan manusia. Sebab Allah setia dan karena itu Ia tidak akan membiarkan kamu dicobai melampaui kekuatanmu."
+    },
+    {
+      "id": 13,
+      "kitab": "2 Timotius",
+      "pasal": 1,
+      "ayat": 7,
+      "tema": "Keberanian",
+      "teks": "Sebab Allah memberikan kepada kita bukan roh ketakutan, melainkan roh yang membangkitkan kekuatan, kasih dan ketertiban."
+    },
+    {
+      "id": 14,
+      "kitab": "Mazmur",
+      "pasal": 46,
+      "ayat": 2,
+      "tema": "Penghiburan",
+      "teks": "Allah itu bagi kita tempat perlindungan dan kekuatan, sebagai penolong dalam kesesakan sangat terbukti."
+    },
+    {
+      "id": 15,
+      "kitab": "Ibrani",
+      "pasal": 11,
+      "ayat": 1,
+      "tema": "Iman",
+      "teks": "Iman adalah dasar dari segala sesuatu yang kita harapkan dan bukti dari segala sesuatu yang tidak kita lihat."
+    },
+    {
+      "id": 16,
+      "kitab": "Yakobus",
+      "pasal": 1,
+      "ayat": 5,
+      "tema": "Hikmat",
+      "teks": "Tetapi apabila di antara kamu ada yang kekurangan hikmat, hendaklah ia memintakannya kepada Allah, yang memberikan kepada semua orang dengan murah hati dan dengan tidak membangkit-bangkit, maka hal itu akan diberikan kepadanya."
+    },
+    {
+      "id": 17,
+      "kitab": "Mazmur",
+      "pasal": 34,
+      "ayat": 9,
+      "tema": "Syukur",
+      "teks": "Takutlah akan TUHAN, hai orang-orang-Nya yang kudus, sebab tidak berkekurangan orang yang takut akan Dia!"
+    },
+    {
+      "id": 18,
+      "kitab": "Matius",
+      "pasal": 6,
+      "ayat": 33,
+      "tema": "Rezeki",
+      "teks": "Tetapi carilah dahulu Kerajaan Allah dan kebenarannya, maka semuanya itu akan ditambahkan kepadamu."
+    },
+    {
+      "id": 19,
+      "kitab": "Filipi",
+      "pasal": 4,
+      "ayat": 6,
+      "tema": "Ketenangan",
+      "teks": "Janganlah hendaknya kamu kuatir tentang apapun juga, tetapi nyatakanlah dalam segala hal keinginanmu kepada Allah dalam doa dan permohonan dengan ucapan syukur."
+    },
+    {
+      "id": 20,
+      "kitab": "Amsal",
+      "pasal": 16,
+      "ayat": 3,
+      "tema": "Kepercayaan",
+      "teks": "Serahkanlah perbuatanmu kepada TUHAN, maka terlaksanalah segala rencanamu."
+    },
+    {
+      "id": 21,
+      "kitab": "Mazmur",
+      "pasal": 121,
+      "ayat": 1,
+      "tema": "Penghiburan",
+      "teks": "Aku melayangkan mataku ke gunung-gunung; dari manakah akan datang pertolonganku? Pertolonganku ialah dari TUHAN, yang menjadikan langit dan bumi."
+    },
+    {
+      "id": 22,
+      "kitab": "Yesaya",
+      "pasal": 40,
+      "ayat": 31,
+      "tema": "Kekuatan",
+      "teks": "Tetapi orang-orang yang menanti-nantikan TUHAN mendapat kekuatan baru: mereka seumpama rajawali yang naik terbang dengan kekuatan sayapnya; mereka berlari dan tidak menjadi lesu, mereka berjalan dan tidak menjadi lelah."
+    },
+    {
+      "id": 23,
+      "kitab": "Galatia",
+      "pasal": 6,
+      "ayat": 9,
+      "tema": "Ketekunan",
+      "teks": "Janganlah kita jemu-jemu berbuat baik, karena apabila sudah datang waktunya, kita akan menuai, jika kita tidak menjadi lemah."
+    },
+    {
+      "id": 24,
+      "kitab": "Efesus",
+      "pasal": 2,
+      "ayat": 8,
+      "tema": "Kasih",
+      "teks": "Sebab karena kasih karunia kamu diselamatkan oleh iman; itu bukan hasil usahamu, tetapi pemberian Allah."
+    },
+    {
+      "id": 25,
+      "kitab": "Kolose",
+      "pasal": 3,
+      "ayat": 23,
+      "tema": "Kerja",
+      "teks": "Apapun juga yang kamu perbuat, perbuatlah dengan segenap hatimu seperti untuk Tuhan dan bukan untuk manusia."
+    },
+    {
+      "id": 26,
+      "kitab": "1 Tesalonika",
+      "pasal": 5,
+      "ayat": 18,
+      "tema": "Syukur",
+      "teks": "Mengucap syukurlah dalam segala hal, sebab itulah yang dikehendaki Allah di dalam Kristus Yesus bagi kamu."
+    },
+    {
+      "id": 27,
+      "kitab": "Mazmur",
+      "pasal": 118,
+      "ayat": 24,
+      "tema": "Syukur",
+      "teks": "Inilah hari yang dijadikan TUHAN, marilah kita bersorak-sorak dan bersukacita karenanya!"
+    },
+    {
+      "id": 28,
+      "kitab": "Roma",
+      "pasal": 12,
+      "ayat": 12,
+      "tema": "Harapan",
+      "teks": "Bersukacitalah dalam pengharapan, sabarlah dalam kesesakan, dan bertekunlah dalam doa!"
+    },
+    {
+      "id": 29,
+      "kitab": "Pengkhotbah",
+      "pasal": 3,
+      "ayat": 1,
+      "tema": "Waktu",
+      "teks": "Untuk segala sesuatu ada masanya, untuk apapun di bawah langit ada waktunya."
+    },
+    {
+      "id": 30,
+      "kitab": "Yohanes",
+      "pasal": 14,
+      "ayat": 27,
+      "tema": "Ketenangan",
+      "teks": "Damai sejahtera Kutinggalkan bagimu. Damai sejahtera-Ku Kuberikan kepadamu, dan apa yang Kuberikan tidak seperti yang diberikan oleh dunia kepadamu. Janganlah gelisah dan gentar hatimu."
+    },
+    {
+      "id": 31,
+      "kitab": "Mazmur",
+      "pasal": 55,
+      "ayat": 23,
+      "tema": "Kepercayaan",
+      "teks": "Serahkanlah kuatirmu kepada TUHAN, maka Ia akan memelihara engkau! Tidak untuk selama-lamanya dibiarkan-Nya orang benar itu goyah."
+    },
+    {
+      "id": 32,
+      "kitab": "Amsal",
+      "pasal": 22,
+      "ayat": 7,
+      "tema": "Keuangan",
+      "teks": "Orang kaya menguasai orang miskin, yang berhutang menjadi budak dari yang menghutangi."
+    },
+    {
+      "id": 33,
+      "kitab": "Matius",
+      "pasal": 6,
+      "ayat": 24,
+      "tema": "Keuangan",
+      "teks": "Tak seorangpun dapat mengabdi kepada dua tuan. Karena jika demikian, ia akan membenci yang seorang dan mengasihi yang lain, atau ia akan setia kepada yang seorang dan tidak mengindahkan yang lain. Kamu tidak dapat mengabdi kepada Allah dan kepada Mamon."
+    },
+    {
+      "id": 34,
+      "kitab": "1 Timotius",
+      "pasal": 6,
+      "ayat": 10,
+      "tema": "Keuangan",
+      "teks": "Karena akar segala kejahatan ialah cinta uang. Sebab oleh memburu uanglah beberapa orang telah menyimpang dari iman dan menyiksa dirinya dengan berbagai-bagai duka."
+    },
+    {
+      "id": 35,
+      "kitab": "Ibrani",
+      "pasal": 13,
+      "ayat": 5,
+      "tema": "Keuangan",
+      "teks": "Janganlah kamu menjadi hamba uang dan cukupkanlah dirimu dengan apa yang ada padamu. Karena Allah telah berfirman: \"Aku sekali-kali tidak akan membiarkan engkau dan Aku sekali-kali tidak akan meninggalkan engkau.\""
+    },
+    {
+      "id": 36,
+      "kitab": "Amsal",
+      "pasal": 13,
+      "ayat": 11,
+      "tema": "Keuangan",
+      "teks": "Harta yang cepat diperoleh akan berkurang, tetapi siapa mengumpulkan sedikit demi sedikit, menjadi kaya."
+    },
+    {
+      "id": 37,
+      "kitab": "Lukas",
+      "pasal": 6,
+      "ayat": 38,
+      "tema": "Memberi",
+      "teks": "Berilah dan kamu akan diberi: suatu takaran yang baik, yang dipadatkan, yang digoncang dan yang tumpah ke luar akan dicurahkan ke dalam ribaanmu. Sebab ukuran yang kamu pakai untuk mengukur, akan diukurkan kepadamu."
+    },
+    {
+      "id": 38,
+      "kitab": "2 Korintus",
+      "pasal": 9,
+      "ayat": 7,
+      "tema": "Memberi",
+      "teks": "Hendaklah masing-masing memberikan menurut kerelaan hatinya, jangan dengan sedih hati atau karena paksaan, sebab Allah mengasihi orang yang memberi dengan sukacita."
+    },
+    {
+      "id": 39,
+      "kitab": "Mazmur",
+      "pasal": 112,
+      "ayat": 5,
+      "tema": "Keuangan",
+      "teks": "Mujur orang yang menaruh belas kasihan dan yang memberi pinjaman, yang melakukan urusannya dengan sewajarnya."
+    },
+    {
+      "id": 40,
+      "kitab": "Amsal",
+      "pasal": 11,
+      "ayat": 25,
+      "tema": "Memberi",
+      "teks": "Siapa banyak memberi berkat, diberi kelimpahan, siapa memberi minum, ia sendiri akan diberi minum."
+    },
+    {
+      "id": 41,
+      "kitab": "Filipi",
+      "pasal": 4,
+      "ayat": 19,
+      "tema": "Rezeki",
+      "teks": "Allahku akan memenuhi segala keperluanmu menurut kekayaan dan kemuliaan-Nya dalam Kristus Yesus."
+    },
+    {
+      "id": 42,
+      "kitab": "Mazmur",
+      "pasal": 23,
+      "ayat": 4,
+      "tema": "Penghiburan",
+      "teks": "Sekalipun aku berjalan dalam lembah kekelaman, aku tidak takut bahaya, sebab Engkau besertaku; gada-Mu dan tongkat-Mu, itulah yang menghibur aku."
+    },
+    {
+      "id": 43,
+      "kitab": "Yesaya",
+      "pasal": 26,
+      "ayat": 3,
+      "tema": "Ketenangan",
+      "teks": "Yang hatinya teguh Kaujagai dengan damai sejahtera, sebab kepada-Mulah ia percaya."
+    },
+    {
+      "id": 44,
+      "kitab": "Matius",
+      "pasal": 5,
+      "ayat": 16,
+      "tema": "Kebaikan",
+      "teks": "Demikianlah hendaknya terangmu bercahaya di depan orang, supaya mereka melihat perbuatanmu yang baik dan memuliakan Bapamu yang di sorga."
+    },
+    {
+      "id": 45,
+      "kitab": "Galatia",
+      "pasal": 5,
+      "ayat": 22,
+      "tema": "Buah Roh",
+      "teks": "Tetapi buah Roh ialah: kasih, sukacita, damai sejahtera, kesabaran, kemurahan, kebaikan, kesetiaan, kelemahlembutan, penguasaan diri. Tidak ada hukum yang menentang hal-hal itu."
+    },
+    {
+      "id": 46,
+      "kitab": "Efesus",
+      "pasal": 4,
+      "ayat": 2,
+      "tema": "Kesabaran",
+      "teks": "Hendaklah kamu selalu rendah hati, lemah lembut, dan sabar. Tunjukkanlah kasihmu dalam hal saling membantu."
+    },
+    {
+      "id": 47,
+      "kitab": "Yakobus",
+      "pasal": 1,
+      "ayat": 2,
+      "tema": "Ketekunan",
+      "teks": "Saudara-saudaraku, anggaplah sebagai suatu kebahagiaan, apabila kamu jatuh ke dalam berbagai-bagai pencobaan."
+    },
+    {
+      "id": 48,
+      "kitab": "Roma",
+      "pasal": 5,
+      "ayat": 3,
+      "tema": "Ketekunan",
+      "teks": "Dan bukan hanya itu saja. Kita malah bermegah juga dalam kesengsaraan kita, karena kita tahu, bahwa kesengsaraan itu menimbulkan ketekunan."
+    },
+    {
+      "id": 49,
+      "kitab": "Mazmur",
+      "pasal": 27,
+      "ayat": 1,
+      "tema": "Keberanian",
+      "teks": "TUHAN adalah terangku dan keselamatanku, kepada siapakah aku harus takut? TUHAN adalah benteng hidupku, terhadap siapakah aku harus gemetar?"
+    },
+    {
+      "id": 50,
+      "kitab": "2 Tawarikh",
+      "pasal": 7,
+      "ayat": 14,
+      "tema": "Pertobatan",
+      "teks": "dan umat-Ku, yang atasnya nama-Ku disebut, merendahkan diri, berdoa dan mencari wajah-Ku, lalu berbalik dari jalan-jalannya yang jahat, maka Aku akan mendengar dari sorga dan mengampuni dosa mereka, serta memulihkan negeri mereka."
+    }
+  ]
+}
