@@ -4,6 +4,8 @@ const menuItems = [
   { path: '/', label: 'Dashboard', icon: '📊' },
   { path: '/watchlist', label: 'Watchlist', icon: '⭐' },
   { path: '/streak', label: 'Streak', icon: '🔥' },
+  { path: '/screener', label: 'Screener', icon: '🔍' },
+  { path: '/kalender', label: 'Kalender', icon: '📅' },
   { path: '/simulasi', label: 'Simulasi', icon: '🎮' },
   { path: '/jurnal', label: 'Jurnal', icon: '📓' },
   { path: '/analisis', label: 'Analisis', icon: '📈' },
