@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Card from '../../components/ui/Card'
 import Badge from '../../components/ui/Badge'
+import AyatFirmanCard from '../../components/shared/AyatFirmanCard'
 import { doaPagi, getDoaHariIni, getKategoriDoa, getPilarList } from '../../data/doaPagi'
 
 export default function DoaPagi() {
@@ -29,9 +30,12 @@ export default function DoaPagi() {
           🌅 Doa & Mantra Pagi
         </h1>
         <p className="text-slate-500 dark:text-slate-400 mt-1">
-          Awali hari dengan doa dan mantra positif.
+          Awali hari dengan doa, firman, dan mantra positif.
         </p>
       </div>
+
+      {/* AYAT FIRMAN */}
+      <AyatFirmanCard />
 
       {/* DOA HARI INI */}
       <Card className="bg-gradient-to-br from-amber-100 via-orange-50 to-yellow-50 dark:from-slate-800 dark:to-slate-700">
@@ -130,7 +134,7 @@ export default function DoaPagi() {
       {/* INFO */}
       <Card className="bg-blue-50 dark:bg-slate-700">
         <p className="text-sm text-slate-600 dark:text-slate-300">
-          💡 <strong>Tips:</strong> Baca doa & mantra ini setiap pagi sebelum
+          💡 <strong>Tips:</strong> Baca ayat firman & doa ini setiap pagi sebelum
           trading. Ini akan menenangkan hati dan menjernihkan pikiran Anda.
         </p>
       </Card>
