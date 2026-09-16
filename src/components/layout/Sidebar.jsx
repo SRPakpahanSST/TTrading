@@ -6,6 +6,8 @@ const menuItems = [
   { path: '/streak', label: 'Streak', icon: '🔥' },
   { path: '/screener', label: 'Screener', icon: '🔍' },
   { path: '/kalender', label: 'Kalender', icon: '📅' },
+  { path: '/leaderboard', label: 'Leaderboard', icon: '🏆' },
+  { path: '/badge', label: 'Badge', icon: '🏅' },
   { path: '/simulasi', label: 'Simulasi', icon: '🎮' },
   { path: '/jurnal', label: 'Jurnal', icon: '📓' },
   { path: '/analisis', label: 'Analisis', icon: '📈' },
