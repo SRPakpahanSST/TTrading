@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react'
-import { sahamList } from '../data/sahamList'
+import { sahamList } from '../.../data/sahamList'
 
 export function useScreener() {
   const [filter, setFilter] = useState({
