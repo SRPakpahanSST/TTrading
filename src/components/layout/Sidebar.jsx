@@ -2,6 +2,8 @@ import { NavLink } from 'react-router-dom'
 
 const menuItems = [
   { path: '/', label: 'Dashboard', icon: '📊' },
+  { path: '/doa-pagi', label: 'Doa & Mantra Pagi', icon: '🌅' },
+  { path: '/syukur', label: 'Jurnal Syukur', icon: '🙏' },
   { path: '/watchlist', label: 'Watchlist', icon: '⭐' },
   { path: '/streak', label: 'Streak', icon: '🔥' },
   { path: '/screener', label: 'Screener', icon: '🔍' },
@@ -59,7 +61,7 @@ export default function Sidebar({ isOpen, onClose }) {
           <div className="mt-6 p-4 bg-amber-50 dark:bg-slate-700 rounded-xl">
             <p className="text-xs text-slate-500 dark:text-slate-400 mb-1">Mantra</p>
             <p className="text-sm text-slate-700 dark:text-slate-200 italic">
-              "Sabar menunggu, cepat bertindak."
+              "Hati adalah grafik Candlestick terbesar."
             </p>
           </div>
         </div>
