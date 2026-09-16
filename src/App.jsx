@@ -15,6 +15,8 @@ import Screener from './pages/Screener'
 import Kalender from './pages/Kalender'
 import Leaderboard from './pages/Leaderboard'
 import BadgePage from './pages/Badge'
+import Bagikan from './pages/Bagikan'
+import LaporanAmal from './pages/LaporanAmal'
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
         <Route path="/kalender" element={<Kalender />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
         <Route path="/badge" element={<BadgePage />} />
+        <Route path="/bagikan" element={<Bagikan />} />
+        <Route path="/laporan-amal" element={<LaporanAmal />} />
         <Route path="/simulasi" element={<Simulasi />} />
         <Route path="/jurnal" element={<Jurnal />} />
         <Route path="/analisis" element={<Analisis />} />
