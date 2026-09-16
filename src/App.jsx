@@ -17,6 +17,8 @@ import Leaderboard from './pages/Leaderboard'
 import BadgePage from './pages/Badge'
 import Bagikan from './pages/Bagikan'
 import LaporanAmal from './pages/LaporanAmal'
+import Syukur from './pages/Syukur'
+import DoaPagi from './pages/DoaPagi'
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
         <Route path="/badge" element={<BadgePage />} />
         <Route path="/bagikan" element={<Bagikan />} />
         <Route path="/laporan-amal" element={<LaporanAmal />} />
+        <Route path="/syukur" element={<Syukur />} />
+        <Route path="/doa-pagi" element={<DoaPagi />} />
         <Route path="/simulasi" element={<Simulasi />} />
         <Route path="/jurnal" element={<Jurnal />} />
         <Route path="/analisis" element={<Analisis />} />
