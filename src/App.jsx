@@ -11,12 +11,18 @@ import Amal from './pages/Amal'
 import Pengaturan from './pages/Pengaturan'
 import Watchlist from './pages/Watchlist'
 import Streak from './pages/Streak'
+import Screener from './pages/Screener'
+import Kalender from './pages/Kalender'
 
 function App() {
   return (
     <Layout>
       <Routes>
         <Route path="/" element={<Dashboard />} />
+        <Route path="/watchlist" element={<Watchlist />} />
+        <Route path="/streak" element={<Streak />} />
+        <Route path="/screener" element={<Screener />} />
+        <Route path="/kalender" element={<Kalender />} />
         <Route path="/simulasi" element={<Simulasi />} />
         <Route path="/jurnal" element={<Jurnal />} />
         <Route path="/analisis" element={<Analisis />} />
@@ -25,8 +31,6 @@ function App() {
         <Route path="/kalkulator" element={<Kalkulator />} />
         <Route path="/amal" element={<Amal />} />
         <Route path="/pengaturan" element={<Pengaturan />} />
-        <Route path="/watchlist" element={<Watchlist />} />
-        <Route path="/streak" element={<Streak />} />
       </Routes>
     </Layout>
   )
