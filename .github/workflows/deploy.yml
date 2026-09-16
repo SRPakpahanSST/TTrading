@@ -32,18 +32,22 @@ jobs:
       - name: 📥 Checkout repository
         uses: actions/checkout@v4
       
-      # 2. Setup Node.js
-      # CATATAN: cache: 'npm' dihapus karena package-lock.json belum ada
+      # 2. Setup Node.js dengan cache npm
+      # ✅ Cache diaktifkan karena package-lock.json sudah ada
+      # Ini membuat build 2-3x lebih cepat
       - name: ⚙️ Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'npm'
       
       # 3. Install dependencies
-      # Menggunakan --legacy-peer-deps untuk mengatasi konflik peer dependency
-      # (eslint-plugin-react-hooks vs eslint 9)
+      # ✅ Menggunakan npm ci (clean install) karena package-lock.json sudah ada
+      # npm ci lebih cepat, konsisten, dan aman dibanding npm install
+      # --legacy-peer-deps untuk mengatasi konflik peer dependency
+      # (eslint-plugin-react-hooks@4.6.2 vs eslint@9)
       - name: 📦 Install dependencies
-        run: npm install --legacy-peer-deps
+        run: npm ci --legacy-peer-deps
       
       # 4. Build aplikasi
       # GITHUB_PAGES=true agar base path di vite.config.js menjadi /TTrading/
