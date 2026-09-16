@@ -13,6 +13,8 @@ import Watchlist from './pages/Watchlist'
 import Streak from './pages/Streak'
 import Screener from './pages/Screener'
 import Kalender from './pages/Kalender'
+import Leaderboard from './pages/Leaderboard'
+import BadgePage from './pages/Badge'
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
         <Route path="/streak" element={<Streak />} />
         <Route path="/screener" element={<Screener />} />
         <Route path="/kalender" element={<Kalender />} />
+        <Route path="/leaderboard" element={<Leaderboard />} />
+        <Route path="/badge" element={<BadgePage />} />
         <Route path="/simulasi" element={<Simulasi />} />
         <Route path="/jurnal" element={<Jurnal />} />
         <Route path="/analisis" element={<Analisis />} />
