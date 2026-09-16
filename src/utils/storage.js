@@ -1,4 +1,3 @@
-// Helper untuk localStorage
 export const storage = {
   get: (key, defaultValue = null) => {
     try {
@@ -8,7 +7,6 @@ export const storage = {
       return defaultValue
     }
   },
-
   set: (key, value) => {
     try {
       localStorage.setItem(key, JSON.stringify(value))
@@ -17,7 +15,6 @@ export const storage = {
       return false
     }
   },
-
   remove: (key) => {
     try {
       localStorage.removeItem(key)
@@ -26,8 +23,6 @@ export const storage = {
       return false
     }
   },
-
-  clear: () => localStorage.clear(),
 }
 
 export const STORAGE_KEYS = {
@@ -38,4 +33,9 @@ export const STORAGE_KEYS = {
   DOSA: 'dosaLogs',
   SIMULASI: 'simulasi',
   SETTINGS: 'settings',
+  WATCHLIST: 'watchlist',
+  STREAK: 'streak',
+  BADGES: 'badges',
+  SYUKUR: 'syukur',
+  LEADERBOARD: 'leaderboard',
 }
