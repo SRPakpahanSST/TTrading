@@ -8,6 +8,8 @@ const menuItems = [
   { path: '/kalender', label: 'Kalender', icon: '📅' },
   { path: '/leaderboard', label: 'Leaderboard', icon: '🏆' },
   { path: '/badge', label: 'Badge', icon: '🏅' },
+  { path: '/bagikan', label: 'Bagikan', icon: '📤' },
+  { path: '/laporan-amal', label: 'Laporan Amal', icon: '📊' },
   { path: '/simulasi', label: 'Simulasi', icon: '🎮' },
   { path: '/jurnal', label: 'Jurnal', icon: '📓' },
   { path: '/analisis', label: 'Analisis', icon: '📈' },
