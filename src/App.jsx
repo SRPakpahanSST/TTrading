@@ -9,6 +9,8 @@ import Meditasi from './pages/Meditasi'
 import Kalkulator from './pages/Kalkulator'
 import Amal from './pages/Amal'
 import Pengaturan from './pages/Pengaturan'
+import Watchlist from './pages/Watchlist'
+import Streak from './pages/Streak'
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
         <Route path="/kalkulator" element={<Kalkulator />} />
         <Route path="/amal" element={<Amal />} />
         <Route path="/pengaturan" element={<Pengaturan />} />
+        <Route path="/watchlist" element={<Watchlist />} />
+        <Route path="/streak" element={<Streak />} />
       </Routes>
     </Layout>
   )
