@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom'
 import { useDashboardData } from '../../hooks/useDashboardData'
 import { useMantra } from '../../hooks/useMantra'
 import { useMisi } from '../../hooks/useMisi'
+import { useSertifikat } from '../../hooks/useSertifikat'
 import NotificationBanner from './NotificationBanner'
 import QuickActions from './QuickActions'
 import PortfolioSummary from './PortfolioSummary'
@@ -10,13 +11,13 @@ import AssetChart from './AssetChart'
 import AmalSummary from './AmalSummary'
 import DosaAlert from './DosaAlert'
 import Card from '../../components/ui/Card'
-import Badge from '../../components/ui/Badge'
 
 export default function Dashboard() {
   const navigate = useNavigate()
   const { portfolio, pilar, amal, dosa, loading } = useDashboardData()
   const mantra = useMantra()
   const { misi, misiHariIni, xpHariIni, levelInfo, streakMisi } = useMisi()
+  const { totalDiperoleh, totalSertifikat } = useSertifikat()
 
   if (loading) {
     return (
@@ -72,9 +73,32 @@ export default function Dashboard() {
           <span className="text-amber-100">
             {levelInfo.current.icon} {levelInfo.current.nama}
           </span>
-          <span className="text-amber-100">
-            🔥 Streak: {streakMisi} hari
-          </span>
+          <span className="text-amber-100">🔥 Streak: {streakMisi} hari</span>
+        </div>
+      </Card>
+
+      {/* WIDGET SERTIFIKAT & LEVEL */}
+      <Card
+        className="bg-gradient-to-br from-purple-500 to-indigo-600 text-white cursor-pointer hover:shadow-xl transition-all"
+        onClick={() => navigate('/sertifikat')}
+      >
+        <div className="flex items-center justify-between">
+          <div>
+            <p className="text-purple-100 text-sm">Level Anda</p>
+            <p className="text-2xl font-bold">
+              {levelInfo.current.icon} {levelInfo.current.nama}
+            </p>
+            <p className="text-purple-100 text-xs mt-1">
+              ⭐ {levelInfo.current.minXP} XP
+            </p>
+          </div>
+          <div className="text-right">
+            <p className="text-purple-100 text-sm">Sertifikat</p>
+            <p className="text-3xl font-bold">
+              {totalDiperoleh}/{totalSertifikat}
+            </p>
+            <p className="text-purple-100 text-xs mt-1">Lihat →</p>
+          </div>
         </div>
       </Card>
 
