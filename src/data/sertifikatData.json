@@ -1,0 +1,89 @@
+{
+  "versi": "1.0",
+  "sertifikat": [
+    {
+      "id": "akademi_emas",
+      "nama": "Sertifikat Emas Akademi",
+      "icon": "🥇",
+      "warna": "amber",
+      "predikat": "Emas",
+      "deskripsi": "Diberikan kepada pengguna yang menyelesaikan Ujian Akhir dengan skor ≥ 90.",
+      "syarat": {
+        "type": "ujianSkor",
+        "value": 90
+      }
+    },
+    {
+      "id": "akademi_perak",
+      "nama": "Sertifikat Perak Akademi",
+      "icon": "🥈",
+      "warna": "gray",
+      "predikat": "Perak",
+      "deskripsi": "Diberikan kepada pengguna yang menyelesaikan Ujian Akhir dengan skor 80-89.",
+      "syarat": {
+        "type": "ujianSkor",
+        "value": 80
+      }
+    },
+    {
+      "id": "akademi_perunggu",
+      "nama": "Sertifikat Perunggu Akademi",
+      "icon": "🥉",
+      "warna": "orange",
+      "predikat": "Perunggu",
+      "deskripsi": "Diberikan kepada pengguna yang menyelesaikan Ujian Akhir dengan skor 70-79.",
+      "syarat": {
+        "type": "ujianSkor",
+        "value": 70
+      }
+    },
+    {
+      "id": "master_trader",
+      "nama": "Sertifikat Master Trader",
+      "icon": "👑",
+      "warna": "purple",
+      "predikat": "Master",
+      "deskripsi": "Diberikan kepada pengguna yang menyelesaikan semua 5 level Akademi Trading.",
+      "syarat": {
+        "type": "semuaLevelSelesai",
+        "value": true
+      }
+    },
+    {
+      "id": "streak_legend",
+      "nama": "Sertifikat Streak Legendaris",
+      "icon": "🔥",
+      "warna": "red",
+      "predikat": "Legendaris",
+      "deskripsi": "Diberikan kepada pengguna yang mencapai streak 30 hari berturut-turut.",
+      "syarat": {
+        "type": "streak",
+        "value": 30
+      }
+    },
+    {
+      "id": "dermawan",
+      "nama": "Sertifikat Dermawan",
+      "icon": "🤝",
+      "warna": "pink",
+      "predikat": "Dermawan",
+      "deskripsi": "Diberikan kepada pengguna yang mencatat minimal 10 amal.",
+      "syarat": {
+        "type": "totalAmal",
+        "value": 10
+      }
+    },
+    {
+      "id": "analis_pro",
+      "nama": "Sertifikat Analis Pro",
+      "icon": "📈",
+      "warna": "blue",
+      "predikat": "Analis Pro",
+      "deskripsi": "Diberikan kepada pengguna yang menyelesaikan minimal 15 studi kasus analisis teknikal.",
+      "syarat": {
+        "type": "studiKasusSelesai",
+        "value": 15
+      }
+    }
+  ]
+}
