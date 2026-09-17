@@ -23,12 +23,14 @@ import Akademi from './pages/Akademi'
 import LevelDetail from './pages/Akademi/LevelDetail'
 import MateriDetail from './pages/Akademi/MateriDetail'
 import UjianAkhir from './pages/Akademi/UjianAkhir'
+import Misi from './pages/Misi'
 
 function App() {
   return (
     <Layout>
       <Routes>
         <Route path="/" element={<Dashboard />} />
+        <Route path="/misi" element={<Misi />} />
         <Route path="/akademi" element={<Akademi />} />
         <Route path="/akademi/level/:levelId" element={<LevelDetail />} />
         <Route path="/akademi/materi/:id" element={<MateriDetail />} />
