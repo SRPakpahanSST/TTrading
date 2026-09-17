@@ -1,0 +1,86 @@
+{
+  "versi": "1.0",
+  "misi": [
+    {
+      "id": "baca_materi",
+      "icon": "📚",
+      "judul": "Baca 1 Materi Akademi",
+      "deskripsi": "Buka Akademi dan baca minimal 1 materi.",
+      "xp": 20,
+      "kategori": "Edukasi",
+      "pilar": "Dewa Fundamental"
+    },
+    {
+      "id": "isi_jurnal",
+      "icon": "📓",
+      "judul": "Isi Jurnal Trading",
+      "deskripsi": "Catat aktivitas trading hari ini di jurnal.",
+      "xp": 15,
+      "kategori": "Refleksi",
+      "pilar": "Sentuhan Emas"
+    },
+    {
+      "id": "jurnal_syukur",
+      "icon": "🙏",
+      "judul": "Isi Jurnal Syukur",
+      "deskripsi": "Catat 3 hal yang Anda syukuri hari ini.",
+      "xp": 15,
+      "kategori": "Spiritual",
+      "pilar": "Dewa Fundamental"
+    },
+    {
+      "id": "cek_watchlist",
+      "icon": "⭐",
+      "judul": "Cek Watchlist",
+      "deskripsi": "Lihat daftar saham favorit Anda di Watchlist.",
+      "xp": 5,
+      "kategori": "Riset",
+      "pilar": "Raja Makro"
+    },
+    {
+      "id": "catat_amal",
+      "icon": "🤝",
+      "judul": "Catat Amal",
+      "deskripsi": "Sisihkan sebagian profit untuk amal hari ini.",
+      "xp": 25,
+      "kategori": "Sosial",
+      "pilar": "Dewa Fundamental"
+    },
+    {
+      "id": "meditasi",
+      "icon": "🧘",
+      "judul": "Meditasi 5 Menit",
+      "deskripsi": "Tenangkan hati dengan meditasi sebelum trading.",
+      "xp": 10,
+      "kategori": "Mental",
+      "pilar": "Dewa Fundamental"
+    },
+    {
+      "id": "cek_dosa",
+      "icon": "🧠",
+      "judul": "Cek 7 Dosa Dagang",
+      "deskripsi": "Evaluasi diri dari 7 dosa dagang hari ini.",
+      "xp": 10,
+      "kategori": "Mental",
+      "pilar": "Sentuhan Emas"
+    },
+    {
+      "id": "analisis_saham",
+      "icon": "🔍",
+      "judul": "Analisis 1 Saham",
+      "deskripsi": "Gunakan Screener untuk analisis 1 saham.",
+      "xp": 15,
+      "kategori": "Riset",
+      "pilar": "Raja Makro"
+    }
+  ],
+  "levelPengguna": [
+    { "level": 1, "nama": "Pemula", "minXP": 0, "icon": "🌱" },
+    { "level": 2, "nama": "Pelajar", "minXP": 100, "icon": "📖" },
+    { "level": 3, "nama": "Analis", "minXP": 300, "icon": "🔬" },
+    { "level": 4, "nama": "Trader", "minXP": 600, "icon": "📊" },
+    { "level": 5, "nama": "Trader Mahir", "minXP": 1000, "icon": "🎯" },
+    { "level": 6, "nama": "Master Trader", "minXP": 2000, "icon": "👑" },
+    { "level": 7, "nama": "Legendaris", "minXP": 5000, "icon": "💎" }
+  ]
+}
