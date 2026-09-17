@@ -1,0 +1,460 @@
+{
+  "level": 4,
+  "namaLevel": "Manajemen Risiko",
+  "deskripsi": "Melindungi modal, menentukan ukuran posisi, dan mengelola risiko.",
+  "badgeSelesai": "risk-manager",
+  "syaratLevelSebelumnya": 3,
+  "materi": [
+    {
+      "id": "L4M1",
+      "judul": "Apa Itu Manajemen Risiko?",
+      "durasi": "5 menit",
+      "icon": "🛡️",
+      "konten": [
+        {
+          "tipe": "paragraf",
+          "teks": "Manajemen risiko adalah serangkaian aturan dan strategi untuk melindungi modal Anda dari kerugian besar. Ini adalah ilmu paling penting dalam trading — lebih penting dari analisis."
+        },
+        {
+          "tipe": "heading",
+          "teks": "Kenapa Manajemen Risiko Vital?"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "Tidak ada analisis yang 100% akurat",
+            "Kerugian besar butuh waktu lama untuk pulih",
+            "Rugi 50% butuh untung 100% untuk balik modal",
+            "Trader sukses bukan yang selalu untung, tapi yang rugi kecil"
+          ]
+        },
+        {
+          "tipe": "heading",
+          "teks": "3 Aturan Emas"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "Jangan pernah risiko lebih dari 2% modal per transaksi",
+            "Selalu pasang stop loss sebelum entry",
+            "Jangan average down pada saham yang fundamentalnya rusak"
+          ]
+        },
+        {
+          "tipe": "highlight",
+          "teks": "Trader pemula fokus pada keuntungan. Trader mahir fokus pada risiko. Yang kedua bertahan lama."
+        }
+      ],
+      "rangkuman": [
+        "Manajemen risiko = melindungi modal",
+        "Maksimal risiko 2% modal per transaksi",
+        "Selalu pasang stop loss",
+        "Trader mahir fokus pada risiko"
+      ],
+      "kuis": [
+        {
+          "soal": "Apa tujuan utama manajemen risiko?",
+          "pilihan": [
+            "Mendapat untung besar",
+            "Melindungi modal dari kerugian besar",
+            "Mempercepat trading",
+            "Mengurangi pajak"
+          ],
+          "jawaban": 1,
+          "penjelasan": "Manajemen risiko bertujuan melindungi modal dari kerugian besar."
+        },
+        {
+          "soal": "Berapa maksimal risiko per transaksi yang disarankan?",
+          "pilihan": [
+            "10% modal",
+            "5% modal",
+            "2% modal",
+            "20% modal"
+          ],
+          "jawaban": 2,
+          "penjelasan": "Maksimal 2% modal per transaksi agar kerugian tidak menghancurkan portofolio."
+        },
+        {
+          "soal": "Apa yang harus dipasang sebelum entry?",
+          "pilihan": [
+            "Take profit",
+            "Stop loss",
+            "Trailing stop",
+            "Pending order"
+          ],
+          "jawaban": 1,
+          "penjelasan": "Stop loss wajib dipasang sebelum entry untuk melindungi dari kerugian besar."
+        }
+      ]
+    },
+    {
+      "id": "L4M2",
+      "judul": "Position Sizing (Ukuran Posisi)",
+      "durasi": "8 menit",
+      "icon": "📏",
+      "konten": [
+        {
+          "tipe": "paragraf",
+          "teks": "Position sizing adalah cara menentukan berapa banyak saham yang harus Anda beli berdasarkan modal dan toleransi risiko Anda."
+        },
+        {
+          "tipe": "heading",
+          "teks": "Rumus Position Sizing"
+        },
+        {
+          "tipe": "paragraf",
+          "teks": "Jumlah Lot = (Modal × % Risiko) ÷ (Harga Beli − Harga Stop Loss) ÷ 100"
+        },
+        {
+          "tipe": "heading",
+          "teks": "Contoh Perhitungan"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "Modal: Rp 1.000.000",
+            "Risiko: 2% = Rp 20.000",
+            "Harga beli: Rp 1.800, Stop loss: Rp 1.700 (selisih Rp 100)",
+            "Jumlah lembar = Rp 20.000 ÷ Rp 100 = 200 lembar = 2 lot"
+          ]
+        },
+        {
+          "tipe": "heading",
+          "teks": "Kenapa Penting?"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "Mencegah Anda beli terlalu banyak di satu saham",
+            "Kerugian terkendali, tidak menghancurkan modal",
+            "Anda bisa bertahan meskipun 5-6 kali rugi berturut-turut"
+          ]
+        },
+        {
+          "tipe": "highlight",
+          "teks": "Modal kecil bukan masalah jika position sizing benar. Yang salah adalah all-in di satu saham."
+        }
+      ],
+      "rangkuman": [
+        "Position sizing = menentukan jumlah lot",
+        "Rumus: (Modal × % Risiko) ÷ Selisih Harga",
+        "Maksimal risiko 2% modal",
+        "Bertahan meskipun rugi beberapa kali"
+      ],
+      "kuis": [
+        {
+          "soal": "Apa itu position sizing?",
+          "pilihan": [
+            "Menentukan waktu beli",
+            "Menentukan jumlah lot",
+            "Menentukan jenis saham",
+            "Menentukan broker"
+          ],
+          "jawaban": 1,
+          "penjelasan": "Position sizing adalah cara menentukan jumlah lot yang tepat berdasarkan modal dan risiko."
+        },
+        {
+          "soal": "Modal Rp 2.000.000, risiko 2%, harga beli Rp 1.000, stop loss Rp 900. Berapa lembar?",
+          "pilihan": [
+            "100 lembar",
+            "200 lembar",
+            "300 lembar",
+            "400 lembar"
+          ],
+          "jawaban": 2,
+          "penjelasan": "Rp 40.000 ÷ Rp 100 = 400 lembar? Tunggu, cek: Rp 2.000.000 × 2% = Rp 40.000. Rp 40.000 ÷ Rp 100 = 400 lembar? Hmm, seharusnya 400 lembar = 4 lot. Tapi pilihan maks 400. Pilih 400."
+        },
+        {
+          "soal": "Kenapa position sizing penting?",
+          "pilihan": [
+            "Agar cepat kaya",
+            "Melindungi modal dari kerugian besar",
+            "Agar bisa trading setiap hari",
+            "Agar tidak kena pajak"
+          ],
+          "jawaban": 1,
+          "penjelasan": "Position sizing mencegah kerugian besar yang bisa menghancurkan modal Anda."
+        }
+      ]
+    },
+    {
+      "id": "L4M3",
+      "judul": "Stop Loss & Take Profit",
+      "durasi": "8 menit",
+      "icon": "🛑",
+      "konten": [
+        {
+          "tipe": "heading",
+          "teks": "Stop Loss (SL)"
+        },
+        {
+          "tipe": "paragraf",
+          "teks": "Stop loss adalah level harga di mana Anda akan otomatis menjual saham untuk membatasi kerugian. SL adalah 'asuransi' Anda."
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "SL wajib dipasang sebelum entry",
+            "Level SL biasanya 5-10% di bawah harga beli",
+            "Bisa berdasarkan support terdekat",
+            "Jangan pernah 'geser' SL ke bawah"
+          ]
+        },
+        {
+          "tipe": "heading",
+          "teks": "Take Profit (TP)"
+        },
+        {
+          "tipe": "paragraf",
+          "teks": "Take profit adalah level harga di mana Anda akan otomatis menjual saham untuk mengambil keuntungan."
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "TP ditentukan sebelum entry",
+            "Level TP berdasarkan resistance atau target profit",
+            "Bisa juga pakai trailing stop"
+          ]
+        },
+        {
+          "tipe": "heading",
+          "teks": "Trailing Stop"
+        },
+        {
+          "tipe": "paragraf",
+          "teks": "Trailing stop adalah stop loss yang otomatis naik mengikuti harga. Cocok untuk menahan posisi saat tren naik tanpa harus aktif memantau."
+        },
+        {
+          "tipe": "highlight",
+          "teks": "Cut loss, jangan berharap. Stop loss adalah sahabat sejati trader."
+        }
+      ],
+      "rangkuman": [
+        "SL = batas kerugian, TP = target profit",
+        "SL wajib dipasang sebelum entry",
+        "Jangan geser SL ke bawah",
+        "Trailing stop naik mengikuti harga"
+      ],
+      "kuis": [
+        {
+          "soal": "Apa itu stop loss?",
+          "pilihan": [
+            "Batas keuntungan",
+            "Batas kerugian",
+            "Harga rata-rata",
+            "Harga tertinggi"
+          ],
+          "jawaban": 1,
+          "penjelasan": "Stop loss adalah level harga untuk membatasi kerugian."
+        },
+        {
+          "soal": "Apa itu trailing stop?",
+          "pilihan": [
+            "SL yang turun mengikuti harga",
+            "SL yang naik mengikuti harga",
+            "SL yang tetap",
+            "SL yang dihapus"
+          ],
+          "jawaban": 1,
+          "penjelasan": "Trailing stop adalah SL yang naik otomatis mengikuti harga untuk mengunci keuntungan."
+        },
+        {
+          "soal": "Bolehkah menggeser stop loss ke bawah?",
+          "pilihan": [
+            "Ya, kalau yakin",
+            "Tidak, itu pelanggaran disiplin",
+            "Boleh, kalau harga turun",
+            "Boleh, kalau untung"
+          ],
+          "jawaban": 1,
+          "penjelasan": "Menggeser SL ke bawah adalah pelanggaran disiplin yang bisa berakibat fatal."
+        }
+      ]
+    },
+    {
+      "id": "L4M4",
+      "judul": "Risk/Reward Ratio",
+      "durasi": "7 menit",
+      "icon": "⚖️",
+      "konten": [
+        {
+          "tipe": "paragraf",
+          "teks": "Risk/Reward Ratio (R/R) adalah perbandingan antara potensi kerugian dengan potensi keuntungan dalam satu transaksi."
+        },
+        {
+          "tipe": "heading",
+          "teks": "Rumus R/R"
+        },
+        {
+          "tipe": "paragraf",
+          "teks": "R/R = (Target Profit − Harga Beli) ÷ (Harga Beli − Stop Loss)"
+        },
+        {
+          "tipe": "heading",
+          "teks": "Contoh"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "Harga beli: Rp 1.000",
+            "Stop loss: Rp 950 (risiko Rp 50)",
+            "Target profit: Rp 1.150 (potensi untung Rp 150)",
+            "R/R = 150 ÷ 50 = 3:1 (bagus!)"
+          ]
+        },
+        {
+          "tipe": "heading",
+          "teks": "Minimal R/R yang Sehat"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "1:1 — minimal (kurang ideal)",
+            "1:2 — baik",
+            "1:3 — sangat baik",
+            "1:4 atau lebih — luar biasa"
+          ]
+        },
+        {
+          "tipe": "paragraf",
+          "teks": "Dengan R/R 1:3, Anda hanya perlu menang 30% dari transaksi untuk tetap profit. Ini kekuatan manajemen risiko."
+        },
+        {
+          "tipe": "highlight",
+          "teks": "Jangan entry jika R/R kurang dari 1:2. Lebih baik tidak trading daripada trading dengan risiko buruk."
+        }
+      ],
+      "rangkuman": [
+        "R/R = potensi untung ÷ potensi rugi",
+        "Minimal R/R yang sehat = 1:2",
+        "Dengan R/R 1:3, win rate 30% sudah profit",
+        "Jangan entry jika R/R < 1:2"
+      ],
+      "kuis": [
+        {
+          "soal": "Apa itu Risk/Reward Ratio?",
+          "pilihan": [
+            "Perbandingan untung dan rugi",
+            "Perbandingan modal dan profit",
+            "Perbandingan saham dan reksa dana",
+            "Perbandingan hari dan minggu"
+          ],
+          "jawaban": 0,
+          "penjelasan": "R/R adalah perbandingan potensi keuntungan dengan potensi kerugian."
+        },
+        {
+          "soal": "Berapa minimal R/R yang sehat?",
+          "pilihan": [
+            "1:1",
+            "1:2",
+            "1:3",
+            "1:5"
+          ],
+          "jawaban": 1,
+          "penjelasan": "Minimal R/R yang sehat adalah 1:2."
+        },
+        {
+          "soal": "Jika R/R 1:3 dan win rate 30%, apakah profit?",
+          "pilihan": [
+            "Rugi",
+            "Profit",
+            "Impas",
+            "Tergantung"
+          ],
+          "jawaban": 1,
+          "penjelasan": "Dengan R/R 1:3, win rate 30% sudah cukup untuk profit."
+        }
+      ]
+    },
+    {
+      "id": "L4M5",
+      "judul": "Diversifikasi Portofolio",
+      "durasi": "7 menit",
+      "icon": "🧺",
+      "konten": [
+        {
+          "tipe": "paragraf",
+          "teks": "Diversifikasi adalah menyebar investasi ke beberapa saham atau sektor untuk mengurangi risiko. Prinsipnya: 'jangan taruh semua telur dalam satu keranjang'."
+        },
+        {
+          "tipe": "heading",
+          "teks": "Cara Diversifikasi"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "Antar sektor — misal: perbankan + konsumer + telekomunikasi",
+            "Antar jenis aset — saham + reksa dana + obligasi",
+            "Antar waktu — beli bertahap (dollar cost averaging)"
+          ]
+        },
+        {
+          "tipe": "heading",
+          "teks": "Berapa Banyak Saham?"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "Pemula: 3-5 saham (cukup untuk diversifikasi)",
+            "Menengah: 5-10 saham",
+            "Profesional: 10-20 saham",
+            "Terlalu banyak (> 20) — sulit dipantau"
+          ]
+        },
+        {
+          "tipe": "heading",
+          "teks": "Over-Diversifikasi"
+        },
+        {
+          "tipe": "paragraf",
+          "teks": "Diversifikasi berlebihan justru menurunkan potensi keuntungan. Fokus pada 5-10 saham berkualitas lebih baik daripada 50 saham biasa."
+        },
+        {
+          "tipe": "highlight",
+          "teks": "Diversifikasi melindungi dari risiko, tapi tidak menghilangkan risiko. Saham tetap bisa turun bersamaan saat pasar crash."
+        }
+      ],
+      "rangkuman": [
+        "Diversifikasi = sebar risiko",
+        "Antar sektor, jenis aset, dan waktu",
+        "Pemula: 3-5 saham",
+        "Hindari over-diversifikasi"
+      ],
+      "kuis": [
+        {
+          "soal": "Apa itu diversifikasi?",
+          "pilihan": [
+            "Fokus di satu saham",
+            "Menyebar investasi ke beberapa saham",
+            "Menjual semua saham",
+            "Membeli saham murah"
+          ],
+          "jawaban": 1,
+          "penjelasan": "Diversifikasi adalah menyebar investasi ke beberapa saham/sektor untuk mengurangi risiko."
+        },
+        {
+          "soal": "Berapa jumlah saham ideal untuk pemula?",
+          "pilihan": [
+            "1-2 saham",
+            "3-5 saham",
+            "10-15 saham",
+            "20+ saham"
+          ],
+          "jawaban": 1,
+          "penjelasan": "Pemula sebaiknya pegang 3-5 saham untuk diversifikasi yang cukup."
+        },
+        {
+          "soal": "Apa risiko over-diversifikasi?",
+          "pilihan": [
+            "Terlalu banyak untung",
+            "Sulit dipantau, potensi untung turun",
+            "Terlalu aman",
+            "Tidak ada risiko"
+          ],
+          "jawaban": 1,
+          "penjelasan": "Over-diversifikasi membuat portofolio sulit dipantau dan menurunkan potensi keuntungan."
+        }
+      ]
+    }
+  ]
+}
