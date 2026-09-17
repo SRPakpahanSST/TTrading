@@ -20,6 +20,7 @@ import LaporanAmal from './pages/LaporanAmal'
 import Syukur from './pages/Syukur'
 import DoaPagi from './pages/DoaPagi'
 import Akademi from './pages/Akademi'
+import LevelDetail from './pages/Akademi/LevelDetail'
 import MateriDetail from './pages/Akademi/MateriDetail'
 
 function App() {
@@ -28,7 +29,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/akademi" element={<Akademi />} />
-        <Route path="/akademi/:id" element={<MateriDetail />} />
+        <Route path="/akademi/level/:levelId" element={<LevelDetail />} />
+        <Route path="/akademi/materi/:id" element={<MateriDetail />} />
         <Route path="/watchlist" element={<Watchlist />} />
         <Route path="/streak" element={<Streak />} />
         <Route path="/screener" element={<Screener />} />
