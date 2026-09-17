@@ -15,6 +15,7 @@ const menuItems = [
   { path: '/bagikan', label: 'Bagikan', icon: '📤' },
   { path: '/laporan-amal', label: 'Laporan Amal', icon: '📊' },
   { path: '/simulasi', label: 'Simulasi', icon: '🎮' },
+  { path: '/simulasi-lanjutan', label: 'Simulasi Lanjutan', icon: '🎯' },
   { path: '/jurnal', label: 'Jurnal', icon: '📓' },
   { path: '/analisis', label: 'Analisis', icon: '📈' },
   { path: '/dosa', label: '7 Dosa Dagang', icon: '🧠' },
