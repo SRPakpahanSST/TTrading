@@ -1,5 +1,7 @@
+import { useNavigate } from 'react-router-dom'
 import { useDashboardData } from '../../hooks/useDashboardData'
 import { useMantra } from '../../hooks/useMantra'
+import { useMisi } from '../../hooks/useMisi'
 import NotificationBanner from './NotificationBanner'
 import QuickActions from './QuickActions'
 import PortfolioSummary from './PortfolioSummary'
@@ -8,10 +10,13 @@ import AssetChart from './AssetChart'
 import AmalSummary from './AmalSummary'
 import DosaAlert from './DosaAlert'
 import Card from '../../components/ui/Card'
+import Badge from '../../components/ui/Badge'
 
 export default function Dashboard() {
+  const navigate = useNavigate()
   const { portfolio, pilar, amal, dosa, loading } = useDashboardData()
   const mantra = useMantra()
+  const { misi, misiHariIni, xpHariIni, levelInfo, streakMisi } = useMisi()
 
   if (loading) {
     return (
@@ -21,9 +26,12 @@ export default function Dashboard() {
     )
   }
 
+  const totalMisi = misi.length
+  const misiSelesai = misiHariIni.length
+  const progressPersen = Math.round((misiSelesai / totalMisi) * 100)
+
   return (
     <div className="space-y-6 fade-in">
-      {/* HEADER */}
       <div>
         <h1 className="text-3xl font-bold text-slate-800 dark:text-white">
           📊 Dashboard
@@ -33,8 +41,42 @@ export default function Dashboard() {
         </p>
       </div>
 
-      {/* NOTIFIKASI */}
       <NotificationBanner />
+
+      {/* WIDGET MISI HARIAN */}
+      <Card
+        className="bg-gradient-to-br from-amber-500 to-orange-600 text-white cursor-pointer hover:shadow-xl transition-all"
+        onClick={() => navigate('/misi')}
+      >
+        <div className="flex items-center justify-between mb-3">
+          <div>
+            <p className="text-amber-100 text-sm">Misi Hari Ini</p>
+            <p className="text-2xl font-bold">
+              {misiSelesai}/{totalMisi} selesai
+            </p>
+          </div>
+          <div className="text-right">
+            <p className="text-amber-100 text-sm">XP Hari Ini</p>
+            <p className="text-2xl font-bold">⭐ {xpHariIni}</p>
+          </div>
+        </div>
+
+        <div className="w-full bg-amber-900/30 rounded-full h-2.5 mb-2">
+          <div
+            className="bg-white h-2.5 rounded-full transition-all duration-500"
+            style={{ width: `${progressPersen}%` }}
+          ></div>
+        </div>
+
+        <div className="flex items-center justify-between text-xs">
+          <span className="text-amber-100">
+            {levelInfo.current.icon} {levelInfo.current.nama}
+          </span>
+          <span className="text-amber-100">
+            🔥 Streak: {streakMisi} hari
+          </span>
+        </div>
+      </Card>
 
       {/* MANTRA */}
       <Card className="bg-gradient-to-r from-amber-50 to-orange-50 dark:from-slate-800 dark:to-slate-700">
@@ -49,19 +91,15 @@ export default function Dashboard() {
         </div>
       </Card>
 
-      {/* QUICK ACTIONS */}
       <QuickActions />
 
-      {/* PORTOFOLIO & PILAR */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <PortfolioSummary portfolio={portfolio} />
         <PilarRadar pilar={pilar} />
       </div>
 
-      {/* GRAFIK ASET */}
       <AssetChart riwayat={portfolio.riwayat} />
 
-      {/* AMAL & DOSA */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <AmalSummary amal={amal} />
         <DosaAlert dosa={dosa} />
