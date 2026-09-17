@@ -301,11 +301,22 @@
             "Selfie dengan KTP"
           ]
         },
-        {
-          "tipe": "highlight",
-          "teks": "Pastikan sekuritas terdaftar di OJK. Cek di website OJK untuk daftar resminya."
-        }
-      ],
+          {
+    "tipe": "highlight",
+    "teks": "Pastikan sekuritas terdaftar di OJK. Cek di website OJK untuk daftar resminya."
+  },
+  {
+    "tipe": "promo",
+    "judul": "Aplikasi Ajaib",
+    "subjudul": "Investasi & Trading dalam satu aplikasi",
+    "icon": "🎁",
+    "pesan": "Hai! Hadiah buat kamu 🎁 Pakai \"Ajaib\" buat investasi & Trading semuanya dalam satu aplikasi. Kalau kamu daftar pakai kode pakpbhx9 dan lakukan transaksi pertama, kamu PASTI langsung dapat 1 lot saham terpopuler 🎉",
+    "kodeReferral": "pakpbhx9",
+    "link": "https://ajaib.onelink.me/SIjL/8qvr3h4s",
+    "tombolTeks": "Daftar di Ajaib Sekarang"
+  }
+],
+
       "rangkuman": [
         "Buka rekening di sekuritas terdaftar OJK",
         "Dokumen: KTP, NPWP (opsional), selfie",
