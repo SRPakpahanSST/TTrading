@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom'
 
 const menuItems = [
   { path: '/', label: 'Dashboard', icon: '📊' },
+  { path: '/misi', label: 'Misi Harian', icon: '🎯' },
   { path: '/akademi', label: 'Akademi Trading', icon: '🎓' },
   { path: '/doa-pagi', label: 'Doa & Mantra Pagi', icon: '🌅' },
   { path: '/syukur', label: 'Jurnal Syukur', icon: '🙏' },
