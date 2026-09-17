@@ -1,0 +1,455 @@
+{
+  "level": 3,
+  "namaLevel": "Teknikal",
+  "deskripsi": "Membaca grafik, mengenali pola, dan menentukan timing beli/jual.",
+  "badgeSelesai": "teknisi",
+  "syaratLevelSebelumnya": 2,
+  "materi": [
+    {
+      "id": "L3M1",
+      "judul": "Apa Itu Analisis Teknikal?",
+      "durasi": "5 menit",
+      "icon": "📉",
+      "konten": [
+        {
+          "tipe": "paragraf",
+          "teks": "Analisis teknikal adalah cara memperkirakan pergerakan harga saham berdasarkan data historis harga dan volume, biasanya ditampilkan dalam bentuk grafik."
+        },
+        {
+          "tipe": "heading",
+          "teks": "Perbedaan dengan Fundamental"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "Fundamental — melihat kesehatan perusahaan (laba, utang)",
+            "Teknikal — melihat pola harga dan volume di grafik",
+            "Fundamental untuk jangka panjang, teknikal untuk timing"
+          ]
+        },
+        {
+          "tipe": "heading",
+          "teks": "Tiga Asumsi Dasar"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "Harga mencerminkan semua informasi yang ada di pasar",
+            "Harga bergerak dalam tren (naik, turun, atau sideways)",
+            "Sejarah cenderung berulang (pola yang sama muncul lagi)"
+          ]
+        },
+        {
+          "tipe": "highlight",
+          "teks": "Analisis teknikal tidak bisa memprediksi masa depan dengan pasti. Ia hanya memberi probabilitas. Selalu gunakan stop loss!"
+        }
+      ],
+      "rangkuman": [
+        "Analisis teknikal = membaca pola harga & volume",
+        "Harga bergerak dalam tren",
+        "Sejarah cenderung berulang",
+        "Selalu gunakan stop loss"
+      ],
+      "kuis": [
+        {
+          "soal": "Apa yang dianalisis dalam analisis teknikal?",
+          "pilihan": [
+            "Laporan keuangan",
+            "Pola harga dan volume",
+            "Manajemen perusahaan",
+            "Dividen"
+          ],
+          "jawaban": 1,
+          "penjelasan": "Analisis teknikal fokus pada pola harga dan volume di grafik."
+        },
+        {
+          "soal": "Berapa asumsi dasar analisis teknikal?",
+          "pilihan": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "jawaban": 2,
+          "penjelasan": "3 asumsi dasar: harga mencerminkan semua info, harga bergerak dalam tren, dan sejarah berulang."
+        },
+        {
+          "soal": "Apakah analisis teknikal bisa memprediksi masa depan dengan pasti?",
+          "pilihan": [
+            "Ya, 100% akurat",
+            "Tidak, hanya memberi probabilitas",
+            "Ya, jika pakai indikator",
+            "Ya, jika pakai AI"
+          ],
+          "jawaban": 1,
+          "penjelasan": "Analisis teknikal hanya memberi probabilitas, bukan kepastian. Selalu gunakan stop loss."
+        }
+      ]
+    },
+    {
+      "id": "L3M2",
+      "judul": "Mengenal Candlestick",
+      "durasi": "8 menit",
+      "icon": "🕯️",
+      "konten": [
+        {
+          "tipe": "paragraf",
+          "teks": "Candlestick adalah cara menampilkan pergerakan harga dalam periode tertentu (misal: 1 hari). Setiap candlestick punya 4 harga: Open, High, Low, Close."
+        },
+        {
+          "tipe": "heading",
+          "teks": "Bagian Candlestick"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "Body — bagian tebal (selisih harga buka & tutup)",
+            "Upper shadow (wick atas) — garis tipis di atas body",
+            "Lower shadow (wick bawah) — garis tipis di bawah body",
+            "Warna hijau — harga naik (close > open)",
+            "Warna merah — harga turun (close < open)"
+          ]
+        },
+        {
+          "tipe": "heading",
+          "teks": "Pola Candlestick Penting"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "Doji — body kecil, tanda keraguan pasar",
+            "Hammer — body kecil di atas, wick bawah panjang (tanda bullish)",
+            "Shooting Star — body kecil di bawah, wick atas panjang (tanda bearish)",
+            "Marubozu — body panjang tanpa wick (tanda kuat)"
+          ]
+        },
+        {
+          "tipe": "highlight",
+          "teks": "Candlestick hanya bermakna jika dilihat dalam konteks tren. Satu candlestick tidak cukup untuk membuat keputusan."
+        }
+      ],
+      "rangkuman": [
+        "Candlestick = 4 harga: Open, High, Low, Close",
+        "Hijau = naik, Merah = turun",
+        "Pola: Doji, Hammer, Shooting Star, Marubozu",
+        "Candlestick harus dibaca dalam konteks tren"
+      ],
+      "kuis": [
+        {
+          "soal": "Berapa harga yang ditampilkan dalam satu candlestick?",
+          "pilihan": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "jawaban": 2,
+          "penjelasan": "4 harga: Open (buka), High (tertinggi), Low (terendah), Close (tutup)."
+        },
+        {
+          "soal": "Candlestick warna hijau menandakan?",
+          "pilihan": [
+            "Harga turun",
+            "Harga naik",
+            "Harga tetap",
+            "Volume tinggi"
+          ],
+          "jawaban": 1,
+          "penjelasan": "Hijau = close > open (harga naik)."
+        },
+        {
+          "soal": "Pola dengan wick bawah panjang disebut?",
+          "pilihan": [
+            "Doji",
+            "Hammer",
+            "Shooting Star",
+            "Marubozu"
+          ],
+          "jawaban": 1,
+          "penjelasan": "Hammer memiliki wick bawah panjang, menandakan tekanan beli."
+        }
+      ]
+    },
+    {
+      "id": "L3M3",
+      "judul": "Support, Resistance & Trendline",
+      "durasi": "8 menit",
+      "icon": "📏",
+      "konten": [
+        {
+          "tipe": "heading",
+          "teks": "Support (Garis Dasar)"
+        },
+        {
+          "tipe": "paragraf",
+          "teks": "Support adalah level harga di mana permintaan cukup kuat untuk menahan harga agar tidak turun lebih jauh. Saat harga menyentuh support, sering kali memantul naik."
+        },
+        {
+          "tipe": "heading",
+          "teks": "Resistance (Garis Atas)"
+        },
+        {
+          "tipe": "paragraf",
+          "teks": "Resistance adalah level harga di mana penawaran cukup kuat untuk menahan harga agar tidak naik lebih jauh. Saat harga menyentuh resistance, sering kali memantul turun."
+        },
+        {
+          "tipe": "heading",
+          "teks": "Trendline"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "Trendline naik — hubungkan titik-titik rendah (higher low)",
+            "Trendline turun — hubungkan titik-titik tinggi (lower high)",
+            "Semakin sering harga menyentuh trendline, semakin kuat"
+          ]
+        },
+        {
+          "tipe": "heading",
+          "teks": "Breakout & Breakdown"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "Breakout — harga menembus resistance ke atas (sinyal beli)",
+            "Breakdown — harga menembus support ke bawah (sinyal jual)"
+          ]
+        },
+        {
+          "tipe": "highlight",
+          "teks": "Di atas garis adalah Raja, di bawah garis adalah bandit. Beli di atas support, jual di bawah support."
+        }
+      ],
+      "rangkuman": [
+        "Support = batas bawah, Resistance = batas atas",
+        "Trendline naik = higher low, Trendline turun = lower high",
+        "Breakout = beli, Breakdown = jual"
+      ],
+      "kuis": [
+        {
+          "soal": "Apa itu support?",
+          "pilihan": [
+            "Level harga yang menahan harga naik",
+            "Level harga yang menahan harga turun",
+            "Garis rata-rata",
+            "Volume tinggi"
+          ],
+          "jawaban": 1,
+          "penjelasan": "Support menahan harga agar tidak turun lebih jauh."
+        },
+        {
+          "soal": "Apa itu breakout?",
+          "pilihan": [
+            "Harga menembus support ke bawah",
+            "Harga menembus resistance ke atas",
+            "Harga sideways",
+            "Harga turun tajam"
+          ],
+          "jawaban": 1,
+          "penjelasan": "Breakout = harga menembus resistance ke atas, sinyal beli."
+        },
+        {
+          "soal": "Trendline naik menghubungkan?",
+          "pilihan": [
+            "Titik tertinggi",
+            "Titik terendah",
+            "Titik rata-rata",
+            "Volume"
+          ],
+          "jawaban": 1,
+          "penjelasan": "Trendline naik menghubungkan titik-titik rendah (higher low)."
+        }
+      ]
+    },
+    {
+      "id": "L3M4",
+      "judul": "Moving Average & Volume",
+      "durasi": "8 menit",
+      "icon": "📊",
+      "konten": [
+        {
+          "tipe": "heading",
+          "teks": "Moving Average (MA)"
+        },
+        {
+          "tipe": "paragraf",
+          "teks": "MA adalah rata-rata harga dalam periode tertentu. MA membantu melihat tren tanpa noise harian."
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "MA20 — rata-rata 20 hari (tren jangka pendek)",
+            "MA50 — rata-rata 50 hari (tren menengah)",
+            "MA200 — rata-rata 200 hari (tren jangka panjang)"
+          ]
+        },
+        {
+          "tipe": "heading",
+          "teks": "Golden Cross & Death Cross"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "Golden Cross — MA pendek memotong MA panjang ke atas (sinyal beli)",
+            "Death Cross — MA pendek memotong MA panjang ke bawah (sinyal jual)"
+          ]
+        },
+        {
+          "tipe": "heading",
+          "teks": "Volume"
+        },
+        {
+          "tipe": "paragraf",
+          "teks": "Volume menunjukkan seberapa banyak saham yang ditradingkan. Volume tinggi menandakan minat pasar yang kuat."
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "Harga naik + volume naik = tren kuat",
+            "Harga naik + volume turun = tren melemah",
+            "Harga turun + volume naik = tekanan jual kuat",
+            "Harga turun + volume turun = tekanan jual melemah"
+          ]
+        },
+        {
+          "tipe": "highlight",
+          "teks": "Volume adalah konfirmasi. Jangan percaya breakout tanpa volume besar."
+        }
+      ],
+      "rangkuman": [
+        "MA = rata-rata harga, melihat tren",
+        "MA200 = garis Bull-Bear",
+        "Golden Cross = beli, Death Cross = jual",
+        "Volume = konfirmasi tren"
+      ],
+      "kuis": [
+        {
+          "soal": "MA200 biasanya digunakan untuk melihat?",
+          "pilihan": [
+            "Tren jangka pendek",
+            "Tren menengah",
+            "Tren jangka panjang",
+            "Volume"
+          ],
+          "jawaban": 2,
+          "penjelasan": "MA200 menunjukkan tren jangka panjang (garis Bull-Bear)."
+        },
+        {
+          "soal": "Golden Cross menandakan?",
+          "pilihan": [
+            "Sinyal jual",
+            "Sinyal beli",
+            "Sideways",
+            "Volume rendah"
+          ],
+          "jawaban": 1,
+          "penjelasan": "Golden Cross = MA pendek memotong MA panjang ke atas, sinyal beli."
+        },
+        {
+          "soal": "Harga naik + volume naik menandakan?",
+          "pilihan": [
+            "Tren melemah",
+            "Tren kuat",
+            "Sideways",
+            "Reversal"
+          ],
+          "jawaban": 1,
+          "penjelasan": "Harga naik dengan volume tinggi menandakan tren naik yang kuat."
+        }
+      ]
+    },
+    {
+      "id": "L3M5",
+      "judul": "Pola Chart Penting",
+      "durasi": "10 menit",
+      "icon": "📈",
+      "konten": [
+        {
+          "tipe": "paragraf",
+          "teks": "Pola chart adalah formasi harga yang berulang dan memberi sinyal arah selanjutnya."
+        },
+        {
+          "tipe": "heading",
+          "teks": "Pola Reversal (Pembalikan)"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "Head and Shoulders — pola puncak 3 (sinyal turun)",
+            "Double Top — dua puncak sama (sinyal turun)",
+            "Double Bottom — dua dasar sama (sinyal naik)",
+            "Inverted Head and Shoulders — kebalikan (sinyal naik)"
+          ]
+        },
+        {
+          "tipe": "heading",
+          "teks": "Pola Continuation (Kelanjutan)"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "Triangle — segitiga, tanda konsolidasi",
+            "Flag — bendera, tanda kelanjutan tren",
+            "Cup and Handle — cangkir dan pegangan (sinyal naik)"
+          ]
+        },
+        {
+          "tipe": "heading",
+          "teks": "Cara Menggunakan Pola"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "Tunggu konfirmasi (breakout/breakdown)",
+            "Cek volume (harus tinggi saat breakout)",
+            "Pasang stop loss di bawah pola"
+          ]
+        },
+        {
+          "tipe": "highlight",
+          "teks": "Pola tidak selalu berhasil. Yang penting adalah disiplin pada stop loss dan manajemen risiko."
+        }
+      ],
+      "rangkuman": [
+        "Pola Reversal: Head & Shoulders, Double Top/Bottom",
+        "Pola Continuation: Triangle, Flag, Cup & Handle",
+        "Tunggu konfirmasi + volume + stop loss"
+      ],
+      "kuis": [
+        {
+          "soal": "Pola Double Bottom menandakan?",
+          "pilihan": [
+            "Sinyal turun",
+            "Sinyal naik",
+            "Sideways",
+            "Tidak ada sinyal"
+          ],
+          "jawaban": 1,
+          "penjelasan": "Double Bottom adalah pola reversal yang menandakan sinyal naik."
+        },
+        {
+          "soal": "Pola Head and Shoulders menandakan?",
+          "pilihan": [
+            "Sinyal naik",
+            "Sinyal turun",
+            "Sideways",
+            "Volume rendah"
+          ],
+          "jawaban": 1,
+          "penjelasan": "Head and Shoulders adalah pola reversal bearish (sinyal turun)."
+        },
+        {
+          "soal": "Saat breakout, volume harus?",
+          "pilihan": [
+            "Rendah",
+            "Tinggi",
+            "Stabil",
+            "Tidak perlu dilihat"
+          ],
+          "jawaban": 1,
+          "penjelasan": "Breakout valid jika disertai volume tinggi sebagai konfirmasi."
+        }
+      ]
+    }
+  ]
+}
