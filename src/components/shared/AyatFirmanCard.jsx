@@ -7,6 +7,8 @@ export default function AyatFirmanCard() {
     ayat,
     loading,
     error,
+    sumber,
+    setSumber,
     tema,
     setTema,
     temaList,
@@ -37,22 +39,48 @@ export default function AyatFirmanCard() {
         </button>
       </div>
 
-      {/* FILTER TEMA */}
-      <div className="flex gap-2 overflow-x-auto pb-2 mb-4">
-        {temaList.map((t) => (
-          <button
-            key={t}
-            onClick={() => setTema(t)}
-            className={`px-3 py-1 rounded-full text-xs font-semibold whitespace-nowrap transition ${
-              tema === t
-                ? 'bg-indigo-500 text-white'
-                : 'bg-white dark:bg-slate-700 text-slate-600 dark:text-slate-300'
-            }`}
-          >
-            {t}
-          </button>
-        ))}
+      {/* TOMBOL PILIH SUMBER */}
+      <div className="flex gap-2 mb-4">
+        <button
+          onClick={() => setSumber('lokal')}
+          className={`flex-1 py-2 rounded-lg text-xs font-semibold transition ${
+            sumber === 'lokal'
+              ? 'bg-indigo-500 text-white'
+              : 'bg-white dark:bg-slate-700 text-slate-600 dark:text-slate-300'
+          }`}
+        >
+          💾 Lokal (120 Ayat)
+        </button>
+        <button
+          onClick={() => setSumber('sabda')}
+          className={`flex-1 py-2 rounded-lg text-xs font-semibold transition ${
+            sumber === 'sabda'
+              ? 'bg-indigo-500 text-white'
+              : 'bg-white dark:bg-slate-700 text-slate-600 dark:text-slate-300'
+          }`}
+        >
+          🌐 API SABDA
+        </button>
       </div>
+
+      {/* FILTER TEMA */}
+      {sumber === 'lokal' && (
+        <div className="flex gap-2 overflow-x-auto pb-2 mb-4">
+          {temaList.map((t) => (
+            <button
+              key={t}
+              onClick={() => setTema(t)}
+              className={`px-3 py-1 rounded-full text-xs font-semibold whitespace-nowrap transition ${
+                tema === t
+                  ? 'bg-indigo-500 text-white'
+                  : 'bg-white dark:bg-slate-700 text-slate-600 dark:text-slate-300'
+              }`}
+            >
+              {t}
+            </button>
+          ))}
+        </div>
+      )}
 
       {loading ? (
         <div className="text-center py-8">
@@ -64,6 +92,7 @@ export default function AyatFirmanCard() {
         </div>
       ) : (
         <>
+          {/* ... (Sisa tampilan ayat tetap sama) ... */}
           <div className="mb-4">
             <div className="flex items-center gap-2 mb-2 flex-wrap">
               <p className="text-sm text-indigo-600 dark:text-indigo-400 font-semibold">
@@ -79,6 +108,8 @@ export default function AyatFirmanCard() {
               "{ayat?.teks}"
             </p>
           </div>
+          
+          {error && <p className="text-xs text-amber-600 dark:text-amber-400 mb-2">⚠️ {error}</p>}
 
           <div className="p-3 bg-white/50 dark:bg-slate-800/50 rounded-xl">
             <p className="text-xs text-slate-500 dark:text-slate-400 text-center italic">
