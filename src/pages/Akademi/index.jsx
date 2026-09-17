@@ -12,10 +12,8 @@ export default function Akademi() {
     const total = level.materi.length
     const levelSelesai = selesai === total
 
-    // Level 1 selalu terbuka
     if (level.level === 1) return { status: 'terbuka', selesai, total, levelSelesai }
 
-    // Cek level sebelumnya
     const levelSebelumnya = LEVELS.find((l) => l.level === level.level - 1)
     const levelSebelumnyaSelesai =
       hitungLevelSelesai(level.level - 1) === levelSebelumnya?.materi.length
@@ -23,6 +21,11 @@ export default function Akademi() {
     if (!levelSebelumnyaSelesai) return { status: 'terkunci', selesai, total, levelSelesai }
     return { status: 'terbuka', selesai, total, levelSelesai }
   }
+
+  // Cek semua level selesai
+  const semuaLevelSelesai = LEVELS.every(
+    (lv) => hitungLevelSelesai(lv.level) === lv.materi.length
+  )
 
   return (
     <div className="space-y-6 fade-in">
@@ -60,12 +63,12 @@ export default function Akademi() {
             return (
               <Card
                 key={level.level}
-                className={`${
-                  terkunci
-                    ? 'opacity-60'
-                    : 'cursor-pointer hover:shadow-xl transition-all'
-                }`}
-                onClick={() => !terkunci && navigate(`/akademi/level/${level.level}`)}
+                className={terkunci ? 'opacity-60' : ''}
+                onClick={() => {
+                  if (!terkunci) {
+                    navigate(`/akademi/level/${level.level}`)
+                  }
+                }}
               >
                 <div className="flex items-start gap-4">
                   <div
@@ -85,13 +88,7 @@ export default function Akademi() {
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2 mb-1 flex-wrap">
                       <Badge
-                        color={
-                          info.levelSelesai
-                            ? 'green'
-                            : terkunci
-                            ? 'gray'
-                            : 'blue'
-                        }
+                        color={info.levelSelesai ? 'green' : terkunci ? 'gray' : 'blue'}
                         size="sm"
                       >
                         Level {level.level}
@@ -126,9 +123,7 @@ export default function Akademi() {
                         <div className="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2">
                           <div
                             className={`h-2 rounded-full transition-all duration-500 ${
-                              info.levelSelesai
-                                ? 'bg-green-500'
-                                : 'bg-indigo-500'
+                              info.levelSelesai ? 'bg-green-500' : 'bg-indigo-500'
                             }`}
                             style={{ width: `${progressPersen}%` }}
                           ></div>
@@ -143,9 +138,7 @@ export default function Akademi() {
                     )}
                   </div>
 
-                  {!terkunci && (
-                    <span className="text-slate-400 text-xl">→</span>
-                  )}
+                  {!terkunci && <span className="text-slate-400 text-xl">→</span>}
                 </div>
               </Card>
             )
@@ -153,12 +146,74 @@ export default function Akademi() {
         </div>
       </div>
 
+      {/* UJIAN AKHIR */}
+      <div>
+        <h2 className="text-xl font-bold text-slate-800 dark:text-white mb-4">
+          🎯 Ujian Akhir
+        </h2>
+        <Card
+          className={`${
+            semuaLevelSelesai
+              ? 'bg-gradient-to-br from-amber-500 to-orange-600 text-white'
+              : 'opacity-60'
+          }`}
+          onClick={() => semuaLevelSelesai && navigate('/akademi/ujian-akhir')}
+        >
+          <div className="flex items-center gap-4">
+            <div
+              className={`flex-shrink-0 w-16 h-16 rounded-2xl flex items-center justify-center ${
+                semuaLevelSelesai
+                  ? 'bg-white/20'
+                  : 'bg-slate-100 dark:bg-slate-700'
+              }`}
+            >
+              <span className="text-3xl">{semuaLevelSelesai ? '🎓' : '🔒'}</span>
+            </div>
+            <div className="flex-1 min-w-0">
+              <div className="flex items-center gap-2 mb-1 flex-wrap">
+                <Badge
+                  color={semuaLevelSelesai ? 'amber' : 'gray'}
+                  size="sm"
+                >
+                  {semuaLevelSelesai ? 'Terbuka' : 'Terkunci'}
+                </Badge>
+                <Badge color={semuaLevelSelesai ? 'purple' : 'gray'} size="sm">
+                  25 Soal
+                </Badge>
+                <Badge color={semuaLevelSelesai ? 'blue' : 'gray'} size="sm">
+                  30 Menit
+                </Badge>
+              </div>
+              <h3
+                className={`font-bold text-lg ${
+                  semuaLevelSelesai ? 'text-white' : 'text-slate-800 dark:text-white'
+                }`}
+              >
+                Ujian Akhir Akademi
+              </h3>
+              <p
+                className={`text-sm ${
+                  semuaLevelSelesai
+                    ? 'text-amber-100'
+                    : 'text-slate-500 dark:text-slate-400'
+                }`}
+              >
+                {semuaLevelSelesai
+                  ? 'Uji pemahaman Anda dari semua 5 level.'
+                  : '🔒 Selesaikan semua 5 level terlebih dahulu'}
+              </p>
+            </div>
+            {semuaLevelSelesai && <span className="text-white text-xl">→</span>}
+          </div>
+        </Card>
+      </div>
+
       {/* INFO */}
       <Card className="bg-blue-50 dark:bg-slate-700">
         <p className="text-sm text-slate-600 dark:text-slate-300">
           💡 <strong>Tips:</strong> Selesaikan setiap level secara berurutan.
-          Level berikutnya akan terbuka otomatis setelah level sebelumnya
-          selesai. Setiap materi selesai = +15 XP.
+          Setelah semua 5 level selesai, Anda bisa mengikuti Ujian Akhir.
+          Setiap materi selesai = +15 XP.
         </p>
       </Card>
     </div>
