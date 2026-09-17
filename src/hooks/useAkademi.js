@@ -2,8 +2,9 @@ import { useState, useEffect, useCallback } from 'react'
 import { storage } from '../utils/storage'
 import level1 from '../data/akademi/level1.json'
 import level2 from '../data/akademi/level2.json'
+import level3 from '../data/akademi/level3.json'
 
-export const LEVELS = [level1, level2]
+export const LEVELS = [level1, level2, level3]
 
 export function useAkademi(levelId = 1) {
   const [progress, setProgress] = useState({
@@ -39,7 +40,6 @@ export function useAkademi(levelId = 1) {
   const progressPersen = Math.round((materiSelesai / totalMateri) * 100)
   const levelSelesai = materiSelesai === totalMateri
 
-  // Cek apakah level sebelumnya sudah selesai (untuk unlock)
   const levelSebelumnyaSelesai =
     levelId === 1 || (progress.materiSelesai[levelId - 1] || []).length ===
     (LEVELS.find((l) => l.level === levelId - 1)?.materi.length || 0)
