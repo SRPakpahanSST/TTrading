@@ -19,12 +19,16 @@ import Bagikan from './pages/Bagikan'
 import LaporanAmal from './pages/LaporanAmal'
 import Syukur from './pages/Syukur'
 import DoaPagi from './pages/DoaPagi'
+import Akademi from './pages/Akademi'
+import MateriDetail from './pages/Akademi/MateriDetail'
 
 function App() {
   return (
     <Layout>
       <Routes>
         <Route path="/" element={<Dashboard />} />
+        <Route path="/akademi" element={<Akademi />} />
+        <Route path="/akademi/:id" element={<MateriDetail />} />
         <Route path="/watchlist" element={<Watchlist />} />
         <Route path="/streak" element={<Streak />} />
         <Route path="/screener" element={<Screener />} />
