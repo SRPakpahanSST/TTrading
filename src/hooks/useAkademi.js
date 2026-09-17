@@ -3,8 +3,9 @@ import { storage } from '../utils/storage'
 import level1 from '../data/akademi/level1.json'
 import level2 from '../data/akademi/level2.json'
 import level3 from '../data/akademi/level3.json'
+import level4 from '../data/akademi/level4.json'
 
-export const LEVELS = [level1, level2, level3]
+export const LEVELS = [level1, level2, level3, level4]
 
 export function useAkademi(levelId = 1) {
   const [progress, setProgress] = useState({
