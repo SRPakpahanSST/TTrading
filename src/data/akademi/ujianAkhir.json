@@ -1,0 +1,333 @@
+{
+  "namaUjian": "Ujian Akhir Akademi Trading",
+  "deskripsi": "Ujian komprehensif dari 5 level pembelajaran.",
+  "durasiMenit": 30,
+  "nilaiLulus": 70,
+  "soal": [
+    {
+      "id": 1,
+      "level": 1,
+      "soal": "Apa arti memiliki saham sebuah perusahaan?",
+      "pilihan": [
+        "Menjadi karyawan perusahaan",
+        "Menjadi pemilik sebagian perusahaan",
+        "Menjadi pelanggan perusahaan",
+        "Menjadi pemasok perusahaan"
+      ],
+      "jawaban": 1,
+      "penjelasan": "Saham adalah bukti kepemilikan. Anda memiliki sebagian kecil perusahaan."
+    },
+    {
+      "id": 2,
+      "level": 1,
+      "soal": "Siapa yang mengelola reksa dana?",
+      "pilihan": [
+        "Investor sendiri",
+        "Manajer investasi",
+        "Pemerintah",
+        "Bank Indonesia"
+      ],
+      "jawaban": 1,
+      "penjelasan": "Reksa dana dikelola oleh manajer investasi profesional."
+    },
+    {
+      "id": 3,
+      "level": 1,
+      "soal": "Untuk pemula, sebaiknya mulai dari?",
+      "pilihan": [
+        "Day trading",
+        "Investasi jangka panjang",
+        "Margin trading",
+        "Spekulasi"
+      ],
+      "jawaban": 1,
+      "penjelasan": "Pemula sebaiknya mulai dari investasi jangka panjang yang lebih aman."
+    },
+    {
+      "id": 4,
+      "level": 1,
+      "soal": "Apa itu RDN?",
+      "pilihan": [
+        "Rekening Dana Nasional",
+        "Rekening Dana Nasabah",
+        "Rekening Dagang Negara",
+        "Rekening Digital"
+      ],
+      "jawaban": 1,
+      "penjelasan": "RDN = Rekening Dana Nasabah, tempat dana trading Anda disimpan."
+    },
+    {
+      "id": 5,
+      "level": 1,
+      "soal": "Berapa lembar dalam 1 lot saham?",
+      "pilihan": [
+        "10 lembar",
+        "50 lembar",
+        "100 lembar",
+        "1.000 lembar"
+      ],
+      "jawaban": 2,
+      "penjelasan": "1 lot = 100 lembar saham."
+    },
+    {
+      "id": 6,
+      "level": 2,
+      "soal": "Apa yang dianalisis dalam analisis fundamental?",
+      "pilihan": [
+        "Pola grafik harga",
+        "Kinerja keuangan perusahaan",
+        "Sentimen media sosial",
+        "Volume transaksi"
+      ],
+      "jawaban": 1,
+      "penjelasan": "Analisis fundamental fokus pada kinerja keuangan perusahaan."
+    },
+    {
+      "id": 7,
+      "level": 2,
+      "soal": "Apa rumus PER?",
+      "pilihan": [
+        "Harga Saham ÷ Laba per Saham",
+        "Laba per Saham ÷ Harga Saham",
+        "Harga Saham × Laba per Saham",
+        "Laba per Saham + Harga Saham"
+      ],
+      "jawaban": 0,
+      "penjelasan": "PER = Harga Saham ÷ Laba per Saham (EPS)."
+    },
+    {
+      "id": 8,
+      "level": 2,
+      "soal": "ROE yang dianggap sangat baik adalah?",
+      "pilihan": [
+        "> 5%",
+        "> 10%",
+        "> 15%",
+        "> 20%"
+      ],
+      "jawaban": 2,
+      "penjelasan": "ROE > 15% dianggap sangat baik dalam analisis fundamental."
+    },
+    {
+      "id": 9,
+      "level": 2,
+      "soal": "Berapa laporan utama dalam laporan keuangan?",
+      "pilihan": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "jawaban": 2,
+      "penjelasan": "3 laporan utama: Laba Rugi, Neraca, Arus Kas."
+    },
+    {
+      "id": 10,
+      "level": 2,
+      "soal": "Manakah yang termasuk saham blue chip?",
+      "pilihan": [
+        "GOTO",
+        "BBCA",
+        "WSKT",
+        "BUMI"
+      ],
+      "jawaban": 1,
+      "penjelasan": "BBCA adalah saham blue chip dengan kapitalisasi besar dan fundamental kuat."
+    },
+    {
+      "id": 11,
+      "level": 3,
+      "soal": "Apa yang dianalisis dalam analisis teknikal?",
+      "pilihan": [
+        "Laporan keuangan",
+        "Pola harga dan volume",
+        "Manajemen perusahaan",
+        "Dividen"
+      ],
+      "jawaban": 1,
+      "penjelasan": "Analisis teknikal fokus pada pola harga dan volume di grafik."
+    },
+    {
+      "id": 12,
+      "level": 3,
+      "soal": "Berapa harga yang ditampilkan dalam satu candlestick?",
+      "pilihan": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "jawaban": 2,
+      "penjelasan": "4 harga: Open, High, Low, Close."
+    },
+    {
+      "id": 13,
+      "level": 3,
+      "soal": "Apa itu support?",
+      "pilihan": [
+        "Level harga yang menahan harga naik",
+        "Level harga yang menahan harga turun",
+        "Garis rata-rata",
+        "Volume tinggi"
+      ],
+      "jawaban": 1,
+      "penjelasan": "Support menahan harga agar tidak turun lebih jauh."
+    },
+    {
+      "id": 14,
+      "level": 3,
+      "soal": "MA200 biasanya digunakan untuk melihat?",
+      "pilihan": [
+        "Tren jangka pendek",
+        "Tren menengah",
+        "Tren jangka panjang",
+        "Volume"
+      ],
+      "jawaban": 2,
+      "penjelasan": "MA200 menunjukkan tren jangka panjang (garis Bull-Bear)."
+    },
+    {
+      "id": 15,
+      "level": 3,
+      "soal": "Pola Double Bottom menandakan?",
+      "pilihan": [
+        "Sinyal turun",
+        "Sinyal naik",
+        "Sideways",
+        "Tidak ada sinyal"
+      ],
+      "jawaban": 1,
+      "penjelasan": "Double Bottom adalah pola reversal yang menandakan sinyal naik."
+    },
+    {
+      "id": 16,
+      "level": 4,
+      "soal": "Apa tujuan utama manajemen risiko?",
+      "pilihan": [
+        "Mendapat untung besar",
+        "Melindungi modal dari kerugian besar",
+        "Mempercepat trading",
+        "Mengurangi pajak"
+      ],
+      "jawaban": 1,
+      "penjelasan": "Manajemen risiko bertujuan melindungi modal dari kerugian besar."
+    },
+    {
+      "id": 17,
+      "level": 4,
+      "soal": "Berapa maksimal risiko per transaksi yang disarankan?",
+      "pilihan": [
+        "10% modal",
+        "5% modal",
+        "2% modal",
+        "20% modal"
+      ],
+      "jawaban": 2,
+      "penjelasan": "Maksimal 2% modal per transaksi."
+    },
+    {
+      "id": 18,
+      "level": 4,
+      "soal": "Apa itu stop loss?",
+      "pilihan": [
+        "Batas keuntungan",
+        "Batas kerugian",
+        "Harga rata-rata",
+        "Harga tertinggi"
+      ],
+      "jawaban": 1,
+      "penjelasan": "Stop loss adalah level harga untuk membatasi kerugian."
+    },
+    {
+      "id": 19,
+      "level": 4,
+      "soal": "Berapa minimal R/R yang sehat?",
+      "pilihan": [
+        "1:1",
+        "1:2",
+        "1:3",
+        "1:5"
+      ],
+      "jawaban": 1,
+      "penjelasan": "Minimal R/R yang sehat adalah 1:2."
+    },
+    {
+      "id": 20,
+      "level": 4,
+      "soal": "Berapa jumlah saham ideal untuk pemula?",
+      "pilihan": [
+        "1-2 saham",
+        "3-5 saham",
+        "10-15 saham",
+        "20+ saham"
+      ],
+      "jawaban": 1,
+      "penjelasan": "Pemula sebaiknya pegang 3-5 saham untuk diversifikasi yang cukup."
+    },
+    {
+      "id": 21,
+      "level": 5,
+      "soal": "Berapa persen kesuksesan trading ditentukan psikologi?",
+      "pilihan": [
+        "20%",
+        "50%",
+        "80%",
+        "100%"
+      ],
+      "jawaban": 2,
+      "penjelasan": "80% kesuksesan trading ditentukan psikologi."
+    },
+    {
+      "id": 22,
+      "level": 5,
+      "soal": "Apa itu sistem trading?",
+      "pilihan": [
+        "Aplikasi trading",
+        "Seperangkat aturan yang diikuti konsisten",
+        "Sinyal dari orang lain",
+        "Robot trading"
+      ],
+      "jawaban": 1,
+      "penjelasan": "Sistem trading adalah seperangkat aturan yang Anda ikuti secara konsisten."
+    },
+    {
+      "id": 23,
+      "level": 5,
+      "soal": "Apa itu revenge trading?",
+      "pilihan": [
+        "Trading dengan tenang",
+        "Trading untuk balas dendam setelah rugi",
+        "Trading setiap hari",
+        "Trading dengan robot"
+      ],
+      "jawaban": 1,
+      "penjelasan": "Revenge trading adalah keinginan balas dendam setelah rugi."
+    },
+    {
+      "id": 24,
+      "level": 5,
+      "soal": "Teknik STOP untuk kelola emosi adalah?",
+      "pilihan": [
+        "Stop, Take breath, Observe, Proceed",
+        "Sleep, Talk, Order, Play",
+        "Stop, Trade, Open, Profit",
+        "Save, Trade, Optimize, Pause"
+      ],
+      "jawaban": 0,
+      "penjelasan": "STOP = Stop, Take a breath, Observe, Proceed wisely."
+    },
+    {
+      "id": 25,
+      "level": 5,
+      "soal": "Apa motto T Trading?",
+      "pilihan": [
+        "Cepat kaya",
+        "Cuan berkah, dampak nyata",
+        "Trading setiap hari",
+        "Untung sebesar-besarnya"
+      ],
+      "jawaban": 1,
+      "penjelasan": "Motto T Trading: Cuan Berkah, Dampak Nyata."
+    }
+  ]
+}
