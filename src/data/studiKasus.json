@@ -1,0 +1,353 @@
+{
+  "versi": "1.0",
+  "kategori": [
+    { "id": "pola", "nama": "Pola Chart", "icon": "📊" },
+    { "id": "support", "nama": "Support/Resistance", "icon": "📏" },
+    { "id": "volume", "nama": "Volume", "icon": "📈" },
+    { "id": "trend", "nama": "Trendline", "icon": "📉" }
+  ],
+  "studiKasus": [
+    {
+      "id": 1,
+      "kategori": "support",
+      "judul": "Harga Menyentuh Support",
+      "deskripsi": "Harga saham turun dan menyentuh garis support yang kuat untuk ketiga kalinya. Volume mulai mengecil.",
+      "chartData": [100, 95, 90, 85, 80, 85, 90, 85, 80, 85, 90, 85, 80, 82, 85],
+      "supportLevel": 80,
+      "resistanceLevel": 100,
+      "pertanyaan": "Apa yang sebaiknya Anda lakukan?",
+      "pilihan": [
+        "Beli, karena harga memantul dari support",
+        "Jual, karena harga akan terus turun",
+        "Tunggu, karena belum ada konfirmasi",
+        "Cut loss, karena support akan jebol"
+      ],
+      "jawaban": 0,
+      "penjelasan": "Harga memantul dari support untuk ketiga kalinya dengan volume mengecil — ini sinyal beli yang kuat. Support kuat biasanya bertahan beberapa kali sebelum jebol. Tapi tetap pasang stop loss di bawah support (Rp 78)."
+    },
+    {
+      "id": 2,
+      "kategori": "support",
+      "judul": "Breakout Resistance",
+      "deskripsi": "Harga menembus garis resistance dengan volume besar. Sebelumnya harga tertahan di level ini 2 kali.",
+      "chartData": [80, 82, 85, 88, 90, 92, 90, 92, 95, 98, 100, 105, 110, 115, 120],
+      "supportLevel": 80,
+      "resistanceLevel": 100,
+      "pertanyaan": "Apa sinyal yang muncul?",
+      "pilihan": [
+        "Sinyal jual",
+        "Sinyal beli (breakout)",
+        "Sideways",
+        "Tidak ada sinyal"
+      ],
+      "jawaban": 1,
+      "penjelasan": "Breakout adalah saat harga menembus resistance ke atas dengan volume besar. Ini sinyal beli yang kuat. Resistance yang ditembus akan berubah menjadi support baru."
+    },
+    {
+      "id": 3,
+      "kategori": "pola",
+      "judul": "Pola Double Top",
+      "deskripsi": "Harga membentuk dua puncak yang hampir sama tinggi, lalu turun.",
+      "chartData": [80, 85, 90, 95, 100, 95, 90, 95, 100, 95, 90, 85, 80, 75, 70],
+      "supportLevel": 90,
+      "resistanceLevel": 100,
+      "pertanyaan": "Pola apa ini dan apa sinyalnya?",
+      "pilihan": [
+        "Double Bottom — sinyal beli",
+        "Double Top — sinyal jual",
+        "Triangle — sideways",
+        "Head and Shoulders — sinyal beli"
+      ],
+      "jawaban": 1,
+      "penjelasan": "Double Top adalah pola reversal bearish. Dua puncak yang sama tinggi menandakan harga gagal naik lebih tinggi — pembeli sudah kehabisan tenaga. Sinyal jual setelah harga turun menembus neckline (Rp 90)."
+    },
+    {
+      "id": 4,
+      "kategori": "pola",
+      "judul": "Pola Double Bottom",
+      "deskripsi": "Harga membentuk dua dasar yang hampir sama rendah, lalu mulai naik.",
+      "chartData": [100, 95, 90, 85, 80, 85, 90, 85, 80, 85, 90, 95, 100, 105, 110],
+      "supportLevel": 80,
+      "resistanceLevel": 100,
+      "pertanyaan": "Apa sinyal dari pola ini?",
+      "pilihan": [
+        "Sinyal jual",
+        "Sinyal beli (reversal bullish)",
+        "Sideways",
+        "Tidak ada sinyal"
+      ],
+      "jawaban": 1,
+      "penjelasan": "Double Bottom adalah pola reversal bullish. Dua dasar yang sama menandakan penjual sudah kehabisan tenaga. Sinyal beli setelah harga naik menembus neckline (Rp 90)."
+    },
+    {
+      "id": 5,
+      "kategori": "volume",
+      "judul": "Harga Naik + Volume Naik",
+      "deskripsi": "Harga naik dari Rp 80 ke Rp 100, sementara volume transaksi juga meningkat terus.",
+      "chartData": [80, 82, 85, 87, 90, 92, 95, 97, 100, 102, 105, 108, 110, 112, 115],
+      "volumeData": [10, 12, 15, 18, 22, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70],
+      "pertanyaan": "Apa arti dari harga naik + volume naik?",
+      "pilihan": [
+        "Tren melemah",
+        "Tren kuat, konfirmasi naik",
+        "Sideways",
+        "Reversal akan terjadi"
+      ],
+      "jawaban": 1,
+      "penjelasan": "Harga naik disertai volume naik menandakan tren naik yang kuat — banyak pembeli yang antusias. Ini konfirmasi bahwa tren naik masih berlanjut."
+    },
+    {
+      "id": 6,
+      "kategori": "volume",
+      "judul": "Harga Naik + Volume Turun",
+      "deskripsi": "Harga terus naik, tapi volume transaksi justru menurun.",
+      "chartData": [80, 82, 85, 88, 90, 92, 94, 96, 98, 100, 102, 104, 106, 108, 110],
+      "volumeData": [70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 22, 20, 18, 15, 12],
+      "pertanyaan": "Apa arti dari harga naik + volume turun?",
+      "pilihan": [
+        "Tren kuat",
+        "Tren melemah, waspada reversal",
+        "Sinyal beli",
+        "Sideways"
+      ],
+      "jawaban": 1,
+      "penjelasan": "Harga naik tanpa dukungan volume adalah tanda tren melemah. Pembeli mulai berkurang, kemungkinan reversal (pembalikan arah) akan terjadi. Waspada!"
+    },
+    {
+      "id": 7,
+      "kategori": "trend",
+      "judul": "Higher High & Higher Low",
+      "deskripsi": "Harga membentuk pola naik: puncak lebih tinggi dan dasar lebih tinggi.",
+      "chartData": [80, 90, 85, 95, 88, 100, 92, 105, 98, 110, 102, 115, 108, 120, 115],
+      "pertanyaan": "Apa yang menandakan pola ini?",
+      "pilihan": [
+        "Tren turun",
+        "Tren naik (uptrend)",
+        "Sideways",
+        "Reversal"
+      ],
+      "jawaban": 1,
+      "penjelasan": "Higher High (puncak lebih tinggi) dan Higher Low (dasar lebih tinggi) adalah ciri khas uptrend. Tren ini sehat dan cenderung berlanjut sampai ada sinyal pembalikan."
+    },
+    {
+      "id": 8,
+      "kategori": "trend",
+      "judul": "Lower High & Lower Low",
+      "deskripsi": "Harga membentuk pola turun: puncak lebih rendah dan dasar lebih rendah.",
+      "chartData": [120, 115, 118, 110, 113, 105, 108, 100, 103, 95, 98, 90, 93, 85, 80],
+      "pertanyaan": "Apa yang menandakan pola ini?",
+      "pilihan": [
+        "Tren naik",
+        "Tren turun (downtrend)",
+        "Sideways",
+        "Reversal"
+      ],
+      "jawaban": 1,
+      "penjelasan": "Lower High dan Lower Low adalah ciri downtrend. Tren turun yang sehat. Jangan melawan tren — tunggu sinyal reversal sebelum beli."
+    },
+    {
+      "id": 9,
+      "kategori": "support",
+      "judul": "Support Jebol (Breakdown)",
+      "deskripsi": "Harga menembus support dengan volume besar setelah bertahan 3 kali.",
+      "chartData": [100, 95, 90, 85, 80, 82, 80, 82, 80, 78, 76, 72, 68, 64, 60],
+      "supportLevel": 80,
+      "pertanyaan": "Apa yang harus dilakukan?",
+      "pilihan": [
+        "Beli, karena murah",
+        "Jual/cut loss, karena breakdown",
+        "Tunggu di Rp 70",
+        "Average down"
+      ],
+      "jawaban": 1,
+      "penjelasan": "Breakdown (support jebol) adalah sinyal jual/cut loss. Setelah bertahan 3 kali, support akhirnya jebol dengan volume besar — ini tanda tren turun baru. Jangan average down di sini!"
+    },
+    {
+      "id": 10,
+      "kategori": "pola",
+      "judul": "Head and Shoulders",
+      "deskripsi": "Harga membentuk pola dengan puncak tengah lebih tinggi dari dua puncak di sisinya.",
+      "chartData": [80, 85, 90, 95, 90, 100, 110, 115, 110, 100, 90, 85, 80, 75, 70],
+      "supportLevel": 90,
+      "pertanyaan": "Pola apa ini dan sinyalnya?",
+      "pilihan": [
+        "Sinyal beli",
+        "Sinyal jual (bearish reversal)",
+        "Sideways",
+        "Tidak ada sinyal"
+      ],
+      "jawaban": 1,
+      "penjelasan": "Head and Shoulders adalah pola reversal bearish paling terkenal. Puncak tengah (head) lebih tinggi dari dua puncak di sisi (shoulder). Sinyal jual setelah menembus neckline."
+    },
+    {
+      "id": 11,
+      "kategori": "volume",
+      "judul": "Volume Spiking di Puncak",
+      "deskripsi": "Harga mencapai puncak tertinggi dengan volume raksasa, lalu mulai turun.",
+      "chartData": [80, 85, 90, 95, 100, 105, 110, 115, 120, 118, 115, 110, 105, 100, 95],
+      "volumeData": [10, 15, 20, 25, 30, 40, 50, 70, 100, 80, 60, 40, 30, 20, 15],
+      "pertanyaan": "Apa arti volume raksasa di puncak?",
+      "pilihan": [
+        "Tren akan lanjut naik",
+        "Klimaks, kemungkinan reversal",
+        "Sideways",
+        "Breakout"
+      ],
+      "jawaban": 1,
+      "penjelasan": "Volume raksasa di puncak (volume climax) menandakan puncak euforia pembeli — biasanya ini adalah akhir dari tren naik. Setelah itu, penjual mulai mengambil alih."
+    },
+    {
+      "id": 12,
+      "kategori": "trend",
+      "judul": "Triangle (Konsolidasi)",
+      "deskripsi": "Harga bergerak dalam range yang menyempit, membentuk segitiga.",
+      "chartData": [80, 90, 82, 88, 84, 87, 85, 86, 85, 85, 85, 86, 85, 87, 88],
+      "supportLevel": 85,
+      "resistanceLevel": 88,
+      "pertanyaan": "Apa arti pola triangle?",
+      "pilihan": [
+        "Tren sudah selesai",
+        "Konsolidasi, tunggu breakout",
+        "Sinyal jual",
+        "Sinyal beli"
+      ],
+      "jawaban": 1,
+      "penjelasan": "Triangle adalah pola konsolidasi — pasar sedang 'mengambil napas' sebelum melanjutkan tren. Tunggu breakout (keluar dari segitiga) dengan volume besar untuk konfirmasi arah."
+    },
+    {
+      "id": 13,
+      "kategori": "support",
+      "judul": "Support Jadi Resistance",
+      "deskripsi": "Harga jatuh menembus support Rp 90, lalu naik lagi ke Rp 90 dan memantul turun.",
+      "chartData": [100, 95, 90, 85, 80, 85, 88, 90, 88, 85, 82, 80, 78, 75, 72],
+      "supportLevel": 90,
+      "pertanyaan": "Kenapa harga memantul turun di Rp 90?",
+      "pilihan": [
+        "Kebetulan",
+        "Support lama berubah jadi resistance",
+        "Sinyal beli",
+        "Volume rendah"
+      ],
+      "jawaban": 1,
+      "penjelasan": "Ketika support jebol, ia sering berubah menjadi resistance baru. Harga yang naik kembali ke level itu akan tertahan karena banyak trader yang ingin 'keluar modal' di harga beli mereka dulu."
+    },
+    {
+      "id": 14,
+      "kategori": "pola",
+      "judul": "Cup and Handle",
+      "deskripsi": "Harga membentuk pola seperti cangkir dengan pegangan kecil, lalu breakout.",
+      "chartData": [80, 75, 70, 68, 70, 75, 80, 85, 90, 88, 86, 88, 92, 98, 105],
+      "supportLevel": 85,
+      "resistanceLevel": 90,
+      "pertanyaan": "Apa sinyal dari pola ini?",
+      "pilihan": [
+        "Sinyal jual",
+        "Sinyal beli (bullish continuation)",
+        "Sideways",
+        "Tidak ada sinyal"
+      ],
+      "jawaban": 1,
+      "penjelasan": "Cup and Handle adalah pola bullish continuation. 'Cangkir' adalah konsolidasi membulat, 'pegangan' adalah koreksi kecil sebelum breakout. Sinyal beli saat harga menembus resistance dengan volume besar."
+    },
+    {
+      "id": 15,
+      "kategori": "volume",
+      "judul": "Divergensi Volume-Harga",
+      "deskripsi": "Harga membuat puncak baru, tapi volume lebih rendah dari puncak sebelumnya.",
+      "chartData": [80, 85, 90, 95, 100, 95, 100, 105, 110, 115, 120, 118, 115, 110, 105],
+      "volumeData": [30, 40, 50, 60, 80, 60, 50, 45, 40, 35, 30, 25, 20, 15, 10],
+      "pertanyaan": "Apa arti divergensi ini?",
+      "pilihan": [
+        "Tren masih kuat",
+        "Tren melemah, waspada reversal",
+        "Sinyal beli",
+        "Sideways"
+      ],
+      "jawaban": 1,
+      "penjelasan": "Divergensi bearish: harga naik tapi volume turun. Ini tanda tren naik melemah — pembeli semakin sedikit. Waspada reversal (pembalikan) turun."
+    },
+    {
+      "id": 16,
+      "kategori": "trend",
+      "judul": "Golden Cross",
+      "deskripsi": "MA20 memotong MA50 ke atas setelah harga turun lama.",
+      "chartData": [100, 95, 90, 85, 82, 80, 82, 85, 88, 92, 95, 98, 102, 105, 110],
+      "pertanyaan": "Apa sinyal Golden Cross?",
+      "pilihan": [
+        "Sinyal jual",
+        "Sinyal beli jangka menengah",
+        "Sideways",
+        "Tidak ada sinyal"
+      ],
+      "jawaban": 1,
+      "penjelasan": "Golden Cross adalah saat MA pendek (20) memotong MA panjang (50) ke atas. Ini menandakan momentum bullish jangka menengah — sinyal beli yang kuat."
+    },
+    {
+      "id": 17,
+      "kategori": "trend",
+      "judul": "Death Cross",
+      "deskripsi": "MA20 memotong MA50 ke bawah setelah harga naik lama.",
+      "chartData": [80, 85, 90, 95, 98, 100, 98, 95, 92, 88, 85, 82, 78, 75, 72],
+      "pertanyaan": "Apa sinyal Death Cross?",
+      "pilihan": [
+        "Sinyal beli",
+        "Sinyal jual jangka menengah",
+        "Sideways",
+        "Tidak ada sinyal"
+      ],
+      "jawaban": 1,
+      "penjelasan": "Death Cross adalah saat MA pendek memotong MA panjang ke bawah. Ini menandakan momentum bearish jangka menengah — sinyal jual yang kuat."
+    },
+    {
+      "id": 18,
+      "kategori": "support",
+      "judul": "Retest Support Setelah Breakout",
+      "deskripsi": "Harga menembus resistance, lalu turun kembali untuk menguji level tersebut sebagai support baru.",
+      "chartData": [80, 85, 90, 95, 100, 105, 110, 108, 105, 102, 100, 103, 108, 112, 118],
+      "supportLevel": 100,
+      "resistanceLevel": 100,
+      "pertanyaan": "Apa yang terjadi di sini?",
+      "pilihan": [
+        "Support jebol",
+        "Retest support (bekas resistance)",
+        "Sinyal jual",
+        "Sideways"
+      ],
+      "jawaban": 1,
+      "penjelasan": "Setelah breakout, resistance lama sering menjadi support baru. Harga naik kembali menguji level tersebut (retest). Jika bertahan, ini konfirmasi breakout yang valid — sinyal beli tambahan."
+    },
+    {
+      "id": 19,
+      "kategori": "pola",
+      "judul": "Bull Flag",
+      "deskripsi": "Setelah naik tajam, harga konsolidasi sebentar dengan volume mengecil, lalu lanjut naik.",
+      "chartData": [80, 90, 100, 110, 120, 118, 116, 115, 116, 118, 122, 128, 135, 142, 150],
+      "pertanyaan": "Apa sinyal pola Bull Flag?",
+      "pilihan": [
+        "Sinyal jual",
+        "Konsolidasi sebelum lanjut naik",
+        "Sideways",
+        "Reversal"
+      ],
+      "jawaban": 1,
+      "penjelasan": "Bull Flag adalah pola continuation bullish. Setelah naik tajam (tiang bendera), harga konsolidasi sebentar (bendera) dengan volume mengecil. Sinyal beli saat harga keluar dari bendera ke atas."
+    },
+    {
+      "id": 20,
+      "kategori": "volume",
+      "judul": "Volume Tinggi di Dasar",
+      "deskripsi": "Harga turun ke dasar, lalu ada volume besar dan harga berhenti turun.",
+      "chartData": [100, 95, 90, 85, 80, 75, 72, 70, 72, 74, 73, 75, 78, 82, 86],
+      "volumeData": [20, 25, 30, 35, 40, 50, 70, 100, 90, 70, 50, 40, 35, 30, 25],
+      "pertanyaan": "Apa arti volume besar di dasar?",
+      "pilihan": [
+        "Tren turun masih lanjut",
+        "Capitulation — kemungkinan reversal naik",
+        "Sideways",
+        "Tidak ada sinyal"
+      ],
+      "jawaban": 1,
+      "penjelasan": "Volume besar di dasar (selling climax / capitulation) menandakan penjual terakhir sudah keluar. Setelah itu, tekanan jual habis dan harga mulai naik — sinyal reversal bullish."
+    }
+  ]
+}
