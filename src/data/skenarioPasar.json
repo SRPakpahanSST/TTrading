@@ -1,0 +1,97 @@
+{
+  "skenario": [
+    {
+      "id": "bullish",
+      "nama": "Pasar Bullish",
+      "deskripsi": "Pasar sedang naik. Tren positif jangka panjang.",
+      "icon": "🐂",
+      "warna": "green",
+      "sulit": "Mudah",
+      "saham": [
+        {
+          "kode": "BRIS",
+          "nama": "Bank Syariah Indonesia",
+          "hargaAwal": 1800,
+          "hargaAkhir": 2200,
+          "tren": "naik"
+        },
+        {
+          "kode": "TLKM",
+          "nama": "Telkom Indonesia",
+          "hargaAwal": 2800,
+          "hargaAkhir": 3200,
+          "tren": "naik"
+        },
+        {
+          "kode": "BBRI",
+          "nama": "Bank Rakyat Indonesia",
+          "hargaAwal": 4200,
+          "hargaAkhir": 4800,
+          "tren": "naik"
+        }
+      ]
+    },
+    {
+      "id": "bearish",
+      "nama": "Pasar Bearish",
+      "deskripsi": "Pasar sedang turun. Butuh kehati-hatian ekstra.",
+      "icon": "🐻",
+      "warna": "red",
+      "sulit": "Sulit",
+      "saham": [
+        {
+          "kode": "BRIS",
+          "nama": "Bank Syariah Indonesia",
+          "hargaAwal": 2200,
+          "hargaAkhir": 1700,
+          "tren": "turun"
+        },
+        {
+          "kode": "TLKM",
+          "nama": "Telkom Indonesia",
+          "hargaAwal": 3200,
+          "hargaAkhir": 2600,
+          "tren": "turun"
+        },
+        {
+          "kode": "BBRI",
+          "nama": "Bank Rakyat Indonesia",
+          "hargaAwal": 4800,
+          "hargaAkhir": 4000,
+          "tren": "turun"
+        }
+      ]
+    },
+    {
+      "id": "sideways",
+      "nama": "Pasar Sideways",
+      "deskripsi": "Pasar bergerak mendatar. Cocok untuk trading jangka pendek.",
+      "icon": "➡️",
+      "warna": "yellow",
+      "sulit": "Sedang",
+      "saham": [
+        {
+          "kode": "BRIS",
+          "nama": "Bank Syariah Indonesia",
+          "hargaAwal": 1800,
+          "hargaAkhir": 1850,
+          "tren": "datar"
+        },
+        {
+          "kode": "TLKM",
+          "nama": "Telkom Indonesia",
+          "hargaAwal": 2800,
+          "hargaAkhir": 2850,
+          "tren": "datar"
+        },
+        {
+          "kode": "BBRI",
+          "nama": "Bank Rakyat Indonesia",
+          "hargaAwal": 4200,
+          "hargaAkhir": 4250,
+          "tren": "datar"
+        }
+      ]
+    }
+  ]
+}
