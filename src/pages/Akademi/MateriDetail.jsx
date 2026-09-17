@@ -215,4 +215,32 @@ export default function MateriDetail() {
                         Jawaban: <strong>{soal.pilihan[soal.jawaban]}</strong>
                       </p>
                       <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 italic">
-                        {soal.pen
+                        {soal.penjelasan}
+                      </p>
+                    </div>
+                  )
+                })}
+              </div>
+
+              <div className="flex gap-3 mt-6">
+                <Button
+                  variant="secondary"
+                  onClick={() => {
+                    setHasilKuis(null)
+                    setJawaban({})
+                  }}
+                  className="flex-1"
+                >
+                  🔄 Ulangi Kuis
+                </Button>
+                <Button onClick={() => navigate('/akademi')} className="flex-1">
+                  → Materi Lain
+                </Button>
+              </div>
+            </div>
+          )}
+        </Card>
+      )}
+    </div>
+  )
+}
