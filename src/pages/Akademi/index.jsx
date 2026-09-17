@@ -5,22 +5,31 @@ import { useAkademi, LEVELS } from '../../hooks/useAkademi'
 
 export default function Akademi() {
   const navigate = useNavigate()
-  const { progress, hitungLevelSelesai } = useAkademi(1)
+  const { progress } = useAkademi(1)
+
+  // Hitung jumlah materi selesai per level langsung dari progress
+  const getMateriSelesai = (levelId) => {
+    return (progress.materiSelesai[levelId] || []).length
+  }
 
   const getLevelStatus = (level) => {
-    const selesai = hitungLevelSelesai(level.level)
+    const selesai = getMateriSelesai(level.level)
     const total = level.materi.length
     const levelSelesai = selesai === total
 
     // Level 1 selalu terbuka
-    if (level.level === 1) return { status: 'terbuka', selesai, total, levelSelesai }
+    if (level.level === 1) {
+      return { status: 'terbuka', selesai, total, levelSelesai }
+    }
 
     // Cek level sebelumnya
     const levelSebelumnya = LEVELS.find((l) => l.level === level.level - 1)
     const levelSebelumnyaSelesai =
-      hitungLevelSelesai(level.level - 1) === levelSebelumnya?.materi.length
+      getMateriSelesai(level.level - 1) === levelSebelumnya?.materi.length
 
-    if (!levelSebelumnyaSelesai) return { status: 'terkunci', selesai, total, levelSelesai }
+    if (!levelSebelumnyaSelesai) {
+      return { status: 'terkunci', selesai, total, levelSelesai }
+    }
     return { status: 'terbuka', selesai, total, levelSelesai }
   }
 
@@ -60,12 +69,12 @@ export default function Akademi() {
             return (
               <Card
                 key={level.level}
-                className={`${
-                  terkunci
-                    ? 'opacity-60'
-                    : 'cursor-pointer hover:shadow-xl transition-all'
-                }`}
-                onClick={() => !terkunci && navigate(`/akademi/level/${level.level}`)}
+                className={terkunci ? 'opacity-60' : ''}
+                onClick={() => {
+                  if (!terkunci) {
+                    navigate(`/akademi/level/${level.level}`)
+                  }
+                }}
               >
                 <div className="flex items-start gap-4">
                   <div
@@ -86,11 +95,7 @@ export default function Akademi() {
                     <div className="flex items-center gap-2 mb-1 flex-wrap">
                       <Badge
                         color={
-                          info.levelSelesai
-                            ? 'green'
-                            : terkunci
-                            ? 'gray'
-                            : 'blue'
+                          info.levelSelesai ? 'green' : terkunci ? 'gray' : 'blue'
                         }
                         size="sm"
                       >
@@ -126,9 +131,7 @@ export default function Akademi() {
                         <div className="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2">
                           <div
                             className={`h-2 rounded-full transition-all duration-500 ${
-                              info.levelSelesai
-                                ? 'bg-green-500'
-                                : 'bg-indigo-500'
+                              info.levelSelesai ? 'bg-green-500' : 'bg-indigo-500'
                             }`}
                             style={{ width: `${progressPersen}%` }}
                           ></div>
@@ -143,9 +146,7 @@ export default function Akademi() {
                     )}
                   </div>
 
-                  {!terkunci && (
-                    <span className="text-slate-400 text-xl">→</span>
-                  )}
+                  {!terkunci && <span className="text-slate-400 text-xl">→</span>}
                 </div>
               </Card>
             )
