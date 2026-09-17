@@ -67,3 +67,248 @@ export default function MateriDetail() {
         className="text-sm text-slate-500 dark:text-slate-400 hover:text-amber-500"
       >
         ← Kembali ke Level {levelNum}
+      </button>
+
+      {/* HEADER MATERI */}
+      <Card>
+        <div className="flex items-center gap-4">
+          <div className="w-16 h-16 rounded-2xl bg-indigo-100 dark:bg-slate-700 flex items-center justify-center">
+            <span className="text-3xl">{materi.icon}</span>
+          </div>
+          <div className="flex-1">
+            <h1 className="text-2xl font-bold text-slate-800 dark:text-white">
+              {materi.judul}
+            </h1>
+            <div className="flex items-center gap-2 mt-1 flex-wrap">
+              <Badge color="purple" size="sm">Level {levelNum}</Badge>
+              <Badge color="gray" size="sm">⏱️ {materi.durasi}</Badge>
+              {selesai && <Badge color="green" size="sm">✅ Selesai</Badge>}
+              {skorLama !== undefined && (
+                <Badge color="amber" size="sm">🎯 Skor {skorLama}/{materi.kuis.length}</Badge>
+              )}
+            </div>
+          </div>
+        </div>
+      </Card>
+
+      {/* KONTEN */}
+      <Card>
+        <div className="space-y-4">
+          {materi.konten.map((item, i) => {
+            if (item.tipe === 'paragraf') {
+              return (
+                <p key={i} className="text-slate-700 dark:text-slate-300 leading-relaxed">
+                  {item.teks}
+                </p>
+              )
+            }
+
+            if (item.tipe === 'heading') {
+              return (
+                <h2 key={i} className="text-xl font-bold text-slate-800 dark:text-white pt-4">
+                  {item.teks}
+                </h2>
+              )
+            }
+
+            if (item.tipe === 'list') {
+              return (
+                <ul key={i} className="space-y-2">
+                  {item.items.map((li, j) => (
+                    <li key={j} className="flex items-start gap-2 text-slate-700 dark:text-slate-300">
+                      <span className="text-indigo-500 mt-1">●</span>
+                      <span>{li}</span>
+                    </li>
+                  ))}
+                </ul>
+              )
+            }
+
+            if (item.tipe === 'highlight') {
+              return (
+                <div key={i} className="p-4 bg-gradient-to-r from-amber-50 to-orange-50 dark:from-slate-700 dark:to-slate-600 rounded-xl border-l-4 border-amber-500">
+                  <p className="text-slate-700 dark:text-slate-200 italic font-medium">
+                    💡 "{item.teks}"
+                  </p>
+                </div>
+              )
+            }
+
+            if (item.tipe === 'promo') {
+              return (
+                <div
+                  key={i}
+                  className="mt-6 rounded-2xl overflow-hidden shadow-lg border border-amber-200 dark:border-slate-600"
+                >
+                  <div className="bg-gradient-to-r from-amber-500 to-orange-500 p-4">
+                    <div className="flex items-center gap-3">
+                      <span className="text-3xl">{item.icon}</span>
+                      <div>
+                        <h3 className="text-lg font-bold text-white">{item.judul}</h3>
+                        <p className="text-amber-100 text-xs">{item.subjudul}</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="p-4 bg-white dark:bg-slate-800 space-y-4">
+                    <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+                      {item.pesan}
+                    </p>
+
+                    {item.kodeReferral && (
+                      <div className="p-3 bg-amber-50 dark:bg-slate-700 rounded-xl border border-dashed border-amber-400">
+                        <p className="text-xs text-slate-500 dark:text-slate-400 mb-1">
+                          Kode Referral:
+                        </p>
+                        <div className="flex items-center gap-2">
+                          <code className="text-lg font-bold text-amber-600 dark:text-amber-400 tracking-wider">
+                            {item.kodeReferral}
+                          </code>
+                          <span className="text-xs text-slate-400">(salin saat daftar)</span>
+                        </div>
+                      </div>
+                    )}
+
+                    <a
+                      href={item.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block w-full py-3 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold text-center rounded-xl transition-all hover:scale-[1.02] active:scale-95 shadow-md"
+                    >
+                      🚀 {item.tombolTeks}
+                    </a>
+
+                    <p className="text-xs text-slate-400 text-center italic">
+                      *Bonus hanya berlaku untuk pengguna baru yang memenuhi syarat.
+                    </p>
+                  </div>
+                </div>
+              )
+            }
+
+            return null
+          })}
+        </div>
+      </Card>
+
+      {/* RANGKUMAN */}
+      <Card title="📝 Rangkuman" icon="">
+        <div className="space-y-2">
+          {materi.rangkuman.map((r, i) => (
+            <div key={i} className="flex items-start gap-2 p-3 bg-slate-50 dark:bg-slate-700 rounded-lg">
+              <span className="text-green-500 font-bold">✓</span>
+              <p className="text-slate-700 dark:text-slate-300 text-sm">{r}</p>
+            </div>
+          ))}
+        </div>
+      </Card>
+
+      {/* TOMBOL SELESAI */}
+      {!selesai && (
+        <Button onClick={handleTandaiSelesai} className="w-full">
+          ✅ Tandai Selesai & Lanjut Kuis
+        </Button>
+      )}
+
+      {/* KUIS */}
+      {(selesai || showKuis) && (
+        <Card title="🎯 Kuis Pemahaman" icon="">
+          {!hasilKuis ? (
+            <div className="space-y-6">
+              {materi.kuis.map((soal, i) => (
+                <div key={i} className="space-y-3">
+                  <p className="font-semibold text-slate-800 dark:text-white">
+                    {i + 1}. {soal.soal}
+                  </p>
+                  <div className="space-y-2">
+                    {soal.pilihan.map((p, j) => (
+                      <button
+                        key={j}
+                        onClick={() => handleJawab(i, j)}
+                        className={`w-full text-left p-3 rounded-xl border-2 transition ${
+                          jawaban[i] === j
+                            ? 'border-indigo-500 bg-indigo-50 dark:bg-slate-700'
+                            : 'border-slate-200 dark:border-slate-600 hover:border-indigo-300'
+                        }`}
+                      >
+                        <span className="font-semibold text-slate-500 dark:text-slate-400 mr-2">
+                          {String.fromCharCode(65 + j)}.
+                        </span>
+                        <span className="text-slate-700 dark:text-slate-300">{p}</span>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              ))}
+              <Button
+                onClick={handleSubmitKuis}
+                disabled={Object.keys(jawaban).length < materi.kuis.length}
+                className="w-full"
+              >
+                📤 Kirim Jawaban
+              </Button>
+            </div>
+          ) : (
+            <div className="text-center py-6">
+              <span className="text-6xl">
+                {hasilKuis.skor === hasilKuis.total ? '🏆' : hasilKuis.skor >= 2 ? '🎉' : '💪'}
+              </span>
+              <p className="text-3xl font-bold text-slate-800 dark:text-white mt-4">
+                {hasilKuis.skor}/{hasilKuis.total}
+              </p>
+              <p className="text-slate-500 dark:text-slate-400 mt-2">
+                {hasilKuis.skor === hasilKuis.total
+                  ? 'Sempurna! Anda paham materi ini.'
+                  : hasilKuis.skor >= 2
+                  ? 'Bagus! Sedikit lagi sempurna.'
+                  : 'Jangan menyerah. Baca ulang materinya.'}
+              </p>
+
+              <div className="mt-6 text-left space-y-3">
+                {materi.kuis.map((soal, i) => {
+                  const benar = jawaban[i] === soal.jawaban
+                  return (
+                    <div
+                      key={i}
+                      className={`p-3 rounded-xl ${
+                        benar
+                          ? 'bg-green-50 dark:bg-green-900/20'
+                          : 'bg-red-50 dark:bg-red-900/20'
+                      }`}
+                    >
+                      <p className="font-semibold text-slate-800 dark:text-white text-sm mb-1">
+                        {benar ? '✅' : '❌'} {soal.soal}
+                      </p>
+                      <p className="text-xs text-slate-600 dark:text-slate-400">
+                        Jawaban: <strong>{soal.pilihan[soal.jawaban]}</strong>
+                      </p>
+                      <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 italic">
+                        {soal.penjelasan}
+                      </p>
+                    </div>
+                  )
+                })}
+              </div>
+
+              <div className="flex gap-3 mt-6">
+                <Button
+                  variant="secondary"
+                  onClick={() => {
+                    setHasilKuis(null)
+                    setJawaban({})
+                  }}
+                  className="flex-1"
+                >
+                  🔄 Ulangi Kuis
+                </Button>
+                <Button onClick={() => navigate(`/akademi/level/${levelNum}`)} className="flex-1">
+                  → Materi Lain
+                </Button>
+              </div>
+            </div>
+          )}
+        </Card>
+      )}
+    </div>
+  )
+}
