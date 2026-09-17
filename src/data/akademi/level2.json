@@ -1,0 +1,449 @@
+{
+  "level": 2,
+  "namaLevel": "Fundamental",
+  "deskripsi": "Analisis laporan keuangan dan rasio untuk memilih saham berkualitas.",
+  "badgeSelesai": "analis",
+  "syaratLevelSebelumnya": 1,
+  "materi": [
+    {
+      "id": "L2M1",
+      "judul": "Apa Itu Analisis Fundamental?",
+      "durasi": "5 menit",
+      "icon": "🔬",
+      "konten": [
+        {
+          "tipe": "paragraf",
+          "teks": "Analisis fundamental adalah cara menilai nilai suatu saham berdasarkan kinerja keuangan perusahaan, bukan berdasarkan pergerakan harga di grafik."
+        },
+        {
+          "tipe": "heading",
+          "teks": "Dua Pendekatan Utama"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "Analisis Fundamental — melihat kesehatan perusahaan (laba, utang, pertumbuhan)",
+            "Analisis Teknikal — melihat pola harga dan volume di grafik"
+          ]
+        },
+        {
+          "tipe": "heading",
+          "teks": "Apa yang Dianalisis?"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "Laba bersih — apakah perusahaan untung?",
+            "Pendapatan — apakah penjualan tumbuh?",
+            "Utang — apakah perusahaan terlalu banyak berutang?",
+            "Dividen — apakah perusahaan membagi hasil ke pemegang saham?",
+            "Prospek sektor — apakah industri ini sedang tumbuh?"
+          ]
+        },
+        {
+          "tipe": "highlight",
+          "teks": "Harga saham jangka panjang akan mengikuti kinerja fundamental perusahaan. Jika labanya naik terus, harga sahamnya akan naik."
+        }
+      ],
+      "rangkuman": [
+        "Analisis fundamental = menilai saham dari kinerja perusahaan",
+        "Fokus: laba, pendapatan, utang, dividen, prospek sektor",
+        "Jangka panjang, harga saham mengikuti fundamental"
+      ],
+      "kuis": [
+        {
+          "soal": "Apa yang dianalisis dalam analisis fundamental?",
+          "pilihan": [
+            "Pola grafik harga",
+            "Kinerja keuangan perusahaan",
+            "Sentimen media sosial",
+            "Volume transaksi"
+          ],
+          "jawaban": 1,
+          "penjelasan": "Analisis fundamental fokus pada kinerja keuangan perusahaan, bukan pola grafik."
+        },
+        {
+          "soal": "Manakah yang BUKAN termasuk analisis fundamental?",
+          "pilihan": [
+            "Laba bersih",
+            "Utang perusahaan",
+            "Pola candlestick",
+            "Dividen"
+          ],
+          "jawaban": 2,
+          "penjelasan": "Pola candlestick termasuk analisis teknikal, bukan fundamental."
+        },
+        {
+          "soal": "Dalam jangka panjang, harga saham cenderung mengikuti?",
+          "pilihan": [
+            "Sentimen media sosial",
+            "Kinerja fundamental perusahaan",
+            "Isu politik",
+            "Cuaca"
+          ],
+          "jawaban": 1,
+          "penjelasan": "Dalam jangka panjang, harga saham akan mengikuti kinerja fundamental perusahaan."
+        }
+      ]
+    },
+    {
+      "id": "L2M2",
+      "judul": "Apa Itu PER (Price to Earning Ratio)?",
+      "durasi": "7 menit",
+      "icon": "💰",
+      "konten": [
+        {
+          "tipe": "paragraf",
+          "teks": "PER (Price to Earning Ratio) adalah rasio yang menunjukkan berapa kali harga saham dibandingkan dengan laba per saham (EPS)."
+        },
+        {
+          "tipe": "heading",
+          "teks": "Rumus PER"
+        },
+        {
+          "tipe": "paragraf",
+          "teks": "PER = Harga Saham ÷ Laba per Saham (EPS)"
+        },
+        {
+          "tipe": "heading",
+          "teks": "Contoh Perhitungan"
+        },
+        {
+          "tipe": "paragraf",
+          "teks": "Saham BRIS di harga Rp 1.800 dengan EPS Rp 127. Maka PER = 1.800 ÷ 127 = 14,2x. Artinya, investor bersedia membayar 14,2 kali laba tahunan untuk saham ini."
+        },
+        {
+          "tipe": "heading",
+          "teks": "Cara Membaca PER"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "PER rendah (< 10x) — saham murah, potensi undervalued",
+            "PER sedang (10-15x) — saham wajar",
+            "PER tinggi (> 20x) — saham mahal, tapi bisa karena pertumbuhan tinggi",
+            "PER negatif — perusahaan sedang rugi (hindari!)"
+          ]
+        },
+        {
+          "tipe": "highlight",
+          "teks": "PER harus dibandingkan dengan perusahaan sejenis. PER bank tidak bisa dibandingkan dengan PER teknologi."
+        }
+      ],
+      "rangkuman": [
+        "PER = Harga Saham ÷ Laba per Saham",
+        "PER rendah = saham murah",
+        "PER tinggi = saham mahal (atau pertumbuhan tinggi)",
+        "PER negatif = perusahaan rugi"
+      ],
+      "kuis": [
+        {
+          "soal": "Apa rumus PER?",
+          "pilihan": [
+            "Harga Saham ÷ Laba per Saham",
+            "Laba per Saham ÷ Harga Saham",
+            "Harga Saham × Laba per Saham",
+            "Laba per Saham + Harga Saham"
+          ],
+          "jawaban": 0,
+          "penjelasan": "PER = Harga Saham ÷ Laba per Saham (EPS)."
+        },
+        {
+          "soal": "Saham A di harga Rp 2.000 dengan EPS Rp 200. Berapa PER-nya?",
+          "pilihan": [
+            "5x",
+            "10x",
+            "20x",
+            "100x"
+          ],
+          "jawaban": 1,
+          "penjelasan": "PER = 2.000 ÷ 200 = 10x."
+        },
+        {
+          "soal": "PER negatif menandakan?",
+          "pilihan": [
+            "Saham sangat murah",
+            "Perusahaan sedang rugi",
+            "Saham berkualitas",
+            "Saham akan naik"
+          ],
+          "jawaban": 1,
+          "penjelasan": "PER negatif berarti perusahaan sedang merugi (EPS negatif)."
+        }
+      ]
+    },
+    {
+      "id": "L2M3",
+      "judul": "Apa Itu PBV dan ROE?",
+      "durasi": "7 menit",
+      "icon": "📊",
+      "konten": [
+        {
+          "tipe": "heading",
+          "teks": "PBV (Price to Book Value)"
+        },
+        {
+          "tipe": "paragraf",
+          "teks": "PBV adalah rasio yang membandingkan harga saham dengan nilai buku (ekuitas) per saham."
+        },
+        {
+          "tipe": "paragraf",
+          "teks": "PBV = Harga Saham ÷ Nilai Buku per Saham"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "PBV < 1 — saham dijual di bawah nilai buku (sangat murah)",
+            "PBV 1-2 — wajar",
+            "PBV > 3 — saham mahal (tapi bisa karena kualitas tinggi)"
+          ]
+        },
+        {
+          "tipe": "heading",
+          "teks": "ROE (Return on Equity)"
+        },
+        {
+          "tipe": "paragraf",
+          "teks": "ROE adalah rasio yang mengukur seberapa efektif perusahaan menghasilkan laba dari modal pemegang saham."
+        },
+        {
+          "tipe": "paragraf",
+          "teks": "ROE = (Laba Bersih ÷ Ekuitas) × 100%"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "ROE > 15% — sangat baik",
+            "ROE 10-15% — baik",
+            "ROE < 10% — kurang baik"
+          ]
+        },
+        {
+          "tipe": "highlight",
+          "teks": "Saham berkualitas biasanya punya ROE tinggi (> 15%) dan PBV wajar (1-3x)."
+        }
+      ],
+      "rangkuman": [
+        "PBV = Harga ÷ Nilai Buku per Saham",
+        "PBV < 1 = murah, > 3 = mahal",
+        "ROE = Laba ÷ Ekuitas × 100%",
+        "ROE > 15% = sangat baik"
+      ],
+      "kuis": [
+        {
+          "soal": "Apa itu PBV?",
+          "pilihan": [
+            "Perbandingan harga dengan laba",
+            "Perbandingan harga dengan nilai buku",
+            "Perbandingan laba dengan ekuitas",
+            "Perbandingan utang dengan ekuitas"
+          ],
+          "jawaban": 1,
+          "penjelasan": "PBV = Price to Book Value, membandingkan harga saham dengan nilai buku."
+        },
+        {
+          "soal": "ROE yang dianggap sangat baik adalah?",
+          "pilihan": [
+            "> 5%",
+            "> 10%",
+            "> 15%",
+            "> 20%"
+          ],
+          "jawaban": 2,
+          "penjelasan": "ROE > 15% dianggap sangat baik dalam analisis fundamental."
+        },
+        {
+          "soal": "PBV < 1 menandakan?",
+          "pilihan": [
+            "Saham mahal",
+            "Saham di bawah nilai buku",
+            "Perusahaan rugi",
+            "Saham tidak likuid"
+          ],
+          "jawaban": 1,
+          "penjelasan": "PBV < 1 berarti harga saham lebih rendah dari nilai bukunya (potensi murah)."
+        }
+      ]
+    },
+    {
+      "id": "L2M4",
+      "judul": "Cara Membaca Laporan Keuangan",
+      "durasi": "10 menit",
+      "icon": "📋",
+      "konten": [
+        {
+          "tipe": "paragraf",
+          "teks": "Laporan keuangan adalah 'rapor' perusahaan. Ada 3 laporan utama yang wajib dibaca."
+        },
+        {
+          "tipe": "heading",
+          "teks": "1. Laporan Laba Rugi"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "Pendapatan — total penjualan perusahaan",
+            "Beban — biaya operasional",
+            "Laba bersih — pendapatan dikurangi beban",
+            "Cek: apakah laba tumbuh dari tahun ke tahun?"
+          ]
+        },
+        {
+          "tipe": "heading",
+          "teks": "2. Neraca (Laporan Posisi Keuangan)"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "Aset — apa yang dimiliki perusahaan",
+            "Utang — kewajiban perusahaan",
+            "Ekuitas — modal pemegang saham",
+            "Cek: apakah utang lebih kecil dari ekuitas?"
+          ]
+        },
+        {
+          "tipe": "heading",
+          "teks": "3. Laporan Arus Kas"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "Arus kas operasi — dari kegiatan utama",
+            "Arus kas investasi — dari beli/jual aset",
+            "Arus kas pendanaan — dari utang/modal",
+            "Cek: apakah arus kas operasi positif dan tumbuh?"
+          ]
+        },
+        {
+          "tipe": "highlight",
+          "teks": "Fokus pada 3 hal: laba bersih tumbuh, utang terkendali, arus kas operasi positif."
+        }
+      ],
+      "rangkuman": [
+        "3 laporan utama: Laba Rugi, Neraca, Arus Kas",
+        "Cek laba tumbuh, utang terkendali, kas positif",
+        "Bandingkan dengan tahun sebelumnya"
+      ],
+      "kuis": [
+        {
+          "soal": "Berapa laporan utama dalam laporan keuangan?",
+          "pilihan": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "jawaban": 2,
+          "penjelasan": "3 laporan utama: Laba Rugi, Neraca, Arus Kas."
+        },
+        {
+          "soal": "Laporan yang menunjukkan aset dan utang adalah?",
+          "pilihan": [
+            "Laba Rugi",
+            "Neraca",
+            "Arus Kas",
+            "Perubahan Modal"
+          ],
+          "jawaban": 1,
+          "penjelasan": "Neraca (Laporan Posisi Keuangan) menunjukkan aset, utang, dan ekuitas."
+        },
+        {
+          "soal": "Arus kas yang baik untuk perusahaan adalah?",
+          "pilihan": [
+            "Arus kas operasi positif",
+            "Arus kas operasi negatif",
+            "Semua arus kas negatif",
+            "Tidak ada arus kas"
+          ],
+          "jawaban": 0,
+          "penjelasan": "Arus kas operasi positif menandakan operasional perusahaan sehat."
+        }
+      ]
+    },
+    {
+      "id": "L2M5",
+      "judul": "Analisis Sektor & Memilih Saham Blue Chip",
+      "durasi": "8 menit",
+      "icon": "🏢",
+      "konten": [
+        {
+          "tipe": "paragraf",
+          "teks": "Setiap sektor memiliki karakteristik berbeda. Memahami sektor membantu Anda memilih saham yang tepat."
+        },
+        {
+          "tipe": "heading",
+          "teks": "Sektor-Sektor Utama di BEI"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "Perbankan — BBCA, BBRI, BMRI (stabil, dividen besar)",
+            "Konsumer — ICBP, UNVR (tahan krisis, permintaan stabil)",
+            "Telekomunikasi — TLKM, ISAT (pendapatan rutin)",
+            "Tambang — PTBA, ADRO (siklus komoditas)",
+            "Infrastruktur — JSMR, WIKA (proyek pemerintah)",
+            "Teknologi — GOTO, BUKA (pertumbuhan tinggi, risiko tinggi)"
+          ]
+        },
+        {
+          "tipe": "heading",
+          "teks": "Ciri Saham Blue Chip"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "Kapitalisasi pasar besar (> Rp 10 triliun)",
+            "Likuiditas tinggi (mudah dijual)",
+            "Laba konsisten tumbuh",
+            "Dividen rutin",
+            "Termasuk indeks IDX30 atau LQ45"
+          ]
+        },
+        {
+          "tipe": "highlight",
+          "teks": "Untuk pemula, mulailah dari saham blue chip. Risiko lebih terkendali, dan mudah dijual kembali."
+        }
+      ],
+      "rangkuman": [
+        "Setiap sektor punya karakteristik berbeda",
+        "Blue chip: kapitalisasi besar, likuid, dividen rutin",
+        "Pemula sebaiknya mulai dari blue chip"
+      ],
+      "kuis": [
+        {
+          "soal": "Manakah yang termasuk saham blue chip?",
+          "pilihan": [
+            "GOTO",
+            "BBCA",
+            "WSKT",
+            "BUMI"
+          ],
+          "jawaban": 1,
+          "penjelasan": "BBCA adalah saham blue chip dengan kapitalisasi besar dan fundamental kuat."
+        },
+        {
+          "soal": "Sektor yang tahan krisis biasanya?",
+          "pilihan": [
+            "Tambang",
+            "Teknologi",
+            "Konsumer",
+            "Properti"
+          ],
+          "jawaban": 2,
+          "penjelasan": "Sektor konsumer tahan krisis karena permintaan produk sehari-hari tetap stabil."
+        },
+        {
+          "soal": "Ciri saham blue chip adalah?",
+          "pilihan": [
+            "Harga murah",
+            "Kapitalisasi pasar besar",
+            "Baru IPO",
+            "Tidak membagi dividen"
+          ],
+          "jawaban": 1,
+          "penjelasan": "Blue chip memiliki kapitalisasi pasar besar dan likuiditas tinggi."
+        }
+      ]
+    }
+  ]
+}
