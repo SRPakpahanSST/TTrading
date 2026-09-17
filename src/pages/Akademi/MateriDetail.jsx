@@ -38,9 +38,8 @@ export default function MateriDetail() {
     materi.kuis.forEach((soal, i) => {
       if (jawaban[i] === soal.jawaban) benar++
     })
-    const skor = benar
-    setHasilKuis({ benar, total: materi.kuis.length, skor })
-    simpanSkorKuis(materi.id, skor)
+    setHasilKuis({ benar, total: materi.kuis.length, skor: benar })
+    simpanSkorKuis(materi.id, benar)
   }
 
   const handleTandaiSelesai = () => {
@@ -67,7 +66,7 @@ export default function MateriDetail() {
             <h1 className="text-2xl font-bold text-slate-800 dark:text-white">
               {materi.judul}
             </h1>
-            <div className="flex items-center gap-2 mt-1">
+            <div className="flex items-center gap-2 mt-1 flex-wrap">
               <Badge color="gray" size="sm">⏱️ {materi.durasi}</Badge>
               {selesai && <Badge color="green" size="sm">✅ Selesai</Badge>}
               {skorLama !== undefined && (
@@ -89,6 +88,7 @@ export default function MateriDetail() {
                 </p>
               )
             }
+
             if (item.tipe === 'heading') {
               return (
                 <h2 key={i} className="text-xl font-bold text-slate-800 dark:text-white pt-4">
@@ -96,6 +96,7 @@ export default function MateriDetail() {
                 </h2>
               )
             }
+
             if (item.tipe === 'list') {
               return (
                 <ul key={i} className="space-y-2">
@@ -108,6 +109,7 @@ export default function MateriDetail() {
                 </ul>
               )
             }
+
             if (item.tipe === 'highlight') {
               return (
                 <div key={i} className="p-4 bg-gradient-to-r from-amber-50 to-orange-50 dark:from-slate-700 dark:to-slate-600 rounded-xl border-l-4 border-amber-500">
@@ -117,6 +119,70 @@ export default function MateriDetail() {
                 </div>
               )
             }
+
+            // ✅ BLOK PROMO BARU
+            if (item.tipe === 'promo') {
+              return (
+                <div
+                  key={i}
+                  className="mt-6 rounded-2xl overflow-hidden shadow-lg border border-amber-200 dark:border-slate-600"
+                >
+                  {/* HEADER */}
+                  <div className="bg-gradient-to-r from-amber-500 to-orange-500 p-4">
+                    <div className="flex items-center gap-3">
+                      <span className="text-3xl">{item.icon}</span>
+                      <div>
+                        <h3 className="text-lg font-bold text-white">
+                          {item.judul}
+                        </h3>
+                        <p className="text-amber-100 text-xs">
+                          {item.subjudul}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* BODY */}
+                  <div className="p-4 bg-white dark:bg-slate-800 space-y-4">
+                    <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+                      {item.pesan}
+                    </p>
+
+                    {/* KODE REFERRAL */}
+                    {item.kodeReferral && (
+                      <div className="p-3 bg-amber-50 dark:bg-slate-700 rounded-xl border border-dashed border-amber-400">
+                        <p className="text-xs text-slate-500 dark:text-slate-400 mb-1">
+                          Kode Referral:
+                        </p>
+                        <div className="flex items-center gap-2">
+                          <code className="text-lg font-bold text-amber-600 dark:text-amber-400 tracking-wider">
+                            {item.kodeReferral}
+                          </code>
+                          <span className="text-xs text-slate-400">
+                            (salin saat daftar)
+                          </span>
+                        </div>
+                      </div>
+                    )}
+
+                    {/* TOMBOL */}
+                    <a
+                      href={item.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block w-full py-3 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold text-center rounded-xl transition-all hover:scale-[1.02] active:scale-95 shadow-md"
+                    >
+                      🚀 {item.tombolTeks}
+                    </a>
+
+                    <p className="text-xs text-slate-400 text-center italic">
+                      *Bonus hanya berlaku untuk pengguna baru yang memenuhi syarat.
+                    </p>
+                  </div>
+                </div>
+              )
+            }
+
             return null
           })}
         </div>
@@ -195,7 +261,6 @@ export default function MateriDetail() {
                   : 'Jangan menyerah. Baca ulang materinya.'}
               </p>
 
-              {/* PEMBAHASAN */}
               <div className="mt-6 text-left space-y-3">
                 {materi.kuis.map((soal, i) => {
                   const benar = jawaban[i] === soal.jawaban
