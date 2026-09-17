@@ -25,6 +25,8 @@ import LevelDetail from './pages/Akademi/LevelDetail'
 import MateriDetail from './pages/Akademi/MateriDetail'
 import UjianAkhir from './pages/Akademi/UjianAkhir'
 import Misi from './pages/Misi'
+import AnalisisTeknikal from './pages/AnalisisTeknikal'
+import StudiDetail from './pages/AnalisisTeknikal/StudiDetail'
 
 function App() {
   return (
@@ -48,6 +50,8 @@ function App() {
         <Route path="/doa-pagi" element={<DoaPagi />} />
         <Route path="/simulasi" element={<Simulasi />} />
         <Route path="/simulasi-lanjutan" element={<SimulasiLanjutan />} />
+        <Route path="/analisis-teknikal" element={<AnalisisTeknikal />} />
+        <Route path="/analisis-teknikal/:id" element={<StudiDetail />} />
         <Route path="/jurnal" element={<Jurnal />} />
         <Route path="/analisis" element={<Analisis />} />
         <Route path="/dosa" element={<DosaDagang />} />
