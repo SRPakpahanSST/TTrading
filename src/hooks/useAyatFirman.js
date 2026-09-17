@@ -1,89 +1,104 @@
 import { useState, useEffect, useCallback } from 'react'
-import ayatFirmanData from '../data/ayatFirman.json'
+import { semuaAyat as ayatLokal } from '../data/ayatFirman' // <-- Impor dari folder
+
+// Opsi sumber data
+const SUMBER_DATA = {
+  LOKAL: 'lokal',
+  SABDA: 'sabda',
+}
 
 export function useAyatFirman() {
   const [ayat, setAyat] = useState(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
-  const [isFallback, setIsFallback] = useState(false)
+  const [sumber, setSumber] = useState(SUMBER_DATA.LOKAL) // <-- State baru
   const [tema, setTema] = useState('semua')
 
-  const semuaAyat = ayatFirmanData.ayat || []
+  // Gabungkan semua ayat dari file lokal
+  const semuaAyat = ayatLokal || []
 
-  // Daftar tema unik
+  // Daftar tema unik dari data lokal
   const temaList = ['semua', ...new Set(semuaAyat.map((a) => a.tema))]
 
-  // Ambil ayat berdasarkan hari ini (rotasi)
-  const getAyatHariIni = useCallback(() => {
-    if (semuaAyat.length === 0) return null
-    const today = new Date()
-    const startOfYear = new Date(today.getFullYear(), 0, 0)
-    const diff = today - startOfYear
-    const dayOfYear = Math.floor(diff / (1000 * 60 * 60 * 24))
-    const index = dayOfYear % semuaAyat.length
-    return semuaAyat[index]
-  }, [semuaAyat])
-
-  // Ambil ayat acak
-  const getAyatAcak = useCallback(() => {
-    if (semuaAyat.length === 0) return null
-    let pool = semuaAyat
-    if (tema !== 'semua') {
-      pool = semuaAyat.filter((a) => a.tema === tema)
+  // Fungsi untuk mengambil ayat dari API SABDA (berdasarkan referensi)
+  const ambilAyatDariSabda = useCallback(async (kitab, pasal, ayat) => {
+    try {
+      const response = await fetch(
+        `https://alkitab.sabda.org/api/passage/?passage=${encodeURIComponent(kitab)}+${pasal}:${ayat}&ver=tb`
+      )
+      const data = await response.json()
+      // Format respons SABDA perlu disesuaikan
+      if (data && data.passage) {
+        return { teks: data.passage }
+      }
+      throw new Error('Format data SABDA tidak dikenali')
+    } catch (err) {
+      console.warn('Gagal mengambil dari SABDA:', err.message)
+      return null // Kembalikan null jika gagal, agar bisa pakai fallback
     }
-    if (pool.length === 0) pool = semuaAyat
-    const index = Math.floor(Math.random() * pool.length)
-    return pool[index]
-  }, [semuaAyat, tema])
+  }, [])
 
-  // Muat ayat hari ini saat komponen dimuat
+  // Muat ayat hari ini (logika ini dipertahankan)
   useEffect(() => {
     setLoading(true)
-    // Simulasi delay kecil agar transisi halus
     setTimeout(() => {
-      const ayatHariIni = getAyatHariIni()
+      const ayatHariIni = semuaAyat.length > 0 ? semuaAyat[new Date().getDate() % semuaAyat.length] : null
       if (ayatHariIni) {
         setAyat(ayatHariIni)
         setError(null)
       } else {
-        setError('Data ayat tidak tersedia.')
+        setError('Data ayat lokal tidak tersedia.')
       }
       setLoading(false)
     }, 300)
-  }, [getAyatHariIni])
+  }, [semuaAyat])
 
-  // Ambil ayat baru
-  const ambilAyatBaru = useCallback(() => {
+  // Ambil ayat baru (logika ini dipertahankan)
+  const ambilAyatBaru = useCallback(async () => {
     setLoading(true)
-    setTimeout(() => {
-      const ayatBaru = getAyatAcak()
-      if (ayatBaru) {
-        setAyat(ayatBaru)
-        setError(null)
+    let ayatBaru = null
+
+    if (sumber === SUMBER_DATA.LOKAL) {
+      // Logika acak dari data lokal
+      let pool = semuaAyat
+      if (tema !== 'semua') {
+        pool = semuaAyat.filter((a) => a.tema === tema)
       }
-      setLoading(false)
-    }, 300)
-  }, [getAyatAcak])
+      ayatBaru = pool[Math.floor(Math.random() * pool.length)]
+    } else if (sumber === SUMBER_DATA.SABDA) {
+      // Ambil acak dari referensi lokal, lalu ambil teksnya dari SABDA
+      const referensiAcak = semuaAyat[Math.floor(Math.random() * semuaAyat.length)]
+      if (referensiAcak) {
+        const hasilSabda = await ambilAyatDariSabda(referensiAcak.kitab, referensiAcak.pasal, referensiAcak.ayat)
+        if (hasilSabda) {
+          ayatBaru = { ...referensiAcak, teks: hasilSabda.teks }
+        }
+      }
+    }
 
-  // Total ayat tersedia
-  const totalAyat = semuaAyat.length
+    // Fallback jika gagal
+    if (!ayatBaru) {
+      ayatBaru = semuaAyat[Math.floor(Math.random() * semuaAyat.length)]
+      setError('Gagal mengambil dari SABDA. Menampilkan dari data lokal.')
+    } else {
+      setError(null)
+    }
+    
+    setAyat(ayatBaru)
+    setLoading(false)
+  }, [sumber, tema, semuaAyat, ambilAyatDariSabda])
 
-  // Jumlah ayat per tema
-  const jumlahPerTema = semuaAyat.reduce((acc, a) => {
-    acc[a.tema] = (acc[a.tema] || 0) + 1
-    return acc
-  }, {})
-
+  // ... (return statement diperbarui untuk menyertakan sumber & setSumber)
   return {
     ayat,
     loading,
     error,
-    isFallback,
+    sumber,
+    setSumber, // <-- Kembalikan state baru
     tema,
     setTema,
     temaList,
-    totalAyat,
-    jumlahPerTema,
+    totalAyat: semuaAyat.length,
     ambilAyatBaru,
   }
 }
