@@ -27,6 +27,7 @@ import UjianAkhir from './pages/Akademi/UjianAkhir'
 import Misi from './pages/Misi'
 import AnalisisTeknikal from './pages/AnalisisTeknikal'
 import StudiDetail from './pages/AnalisisTeknikal/StudiDetail'
+import Sertifikat from './pages/Sertifikat'
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
         <Route path="/kalender" element={<Kalender />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
         <Route path="/badge" element={<BadgePage />} />
+        <Route path="/sertifikat" element={<Sertifikat />} />
         <Route path="/bagikan" element={<Bagikan />} />
         <Route path="/laporan-amal" element={<LaporanAmal />} />
         <Route path="/syukur" element={<Syukur />} />
