@@ -1,20 +1,21 @@
 import { useState, useEffect, useCallback } from 'react'
-import { storage, STORAGE_KEYS } from '../utils/storage'
+import { storage } from '../utils/storage'
 import level1 from '../data/akademi/level1.json'
+import level2 from '../data/akademi/level2.json'
 
-export function useAkademi() {
+export const LEVELS = [level1, level2]
+
+export function useAkademi(levelId = 1) {
   const [progress, setProgress] = useState({
-    materiSelesai: [],
+    materiSelesai: {},
     kuisSkor: {},
-    levelAktif: 1,
     xp: 0,
   })
 
   const load = useCallback(() => {
     const saved = storage.get('akademiProgress', {
-      materiSelesai: [],
+      materiSelesai: {},
       kuisSkor: {},
-      levelAktif: 1,
       xp: 0,
     })
     setProgress(saved)
@@ -29,12 +30,29 @@ export function useAkademi() {
     storage.set('akademiProgress', newProgress)
   }
 
+  const level = LEVELS.find((l) => l.level === levelId) || LEVELS[0]
+  const semuaMateri = level.materi
+  const totalMateri = semuaMateri.length
+
+  const selesaiLevelIni = progress.materiSelesai[levelId] || []
+  const materiSelesai = selesaiLevelIni.length
+  const progressPersen = Math.round((materiSelesai / totalMateri) * 100)
+  const levelSelesai = materiSelesai === totalMateri
+
+  // Cek apakah level sebelumnya sudah selesai (untuk unlock)
+  const levelSebelumnyaSelesai =
+    levelId === 1 || (progress.materiSelesai[levelId - 1] || []).length ===
+    (LEVELS.find((l) => l.level === levelId - 1)?.materi.length || 0)
+
   const tandaiSelesai = (materiId) => {
-    if (progress.materiSelesai.includes(materiId)) return
+    if (selesaiLevelIni.includes(materiId)) return
     const newProgress = {
       ...progress,
-      materiSelesai: [...progress.materiSelesai, materiId],
-      xp: progress.xp + 10,
+      materiSelesai: {
+        ...progress.materiSelesai,
+        [levelId]: [...selesaiLevelIni, materiId],
+      },
+      xp: progress.xp + 15,
     }
     simpanProgress(newProgress)
   }
@@ -47,22 +65,25 @@ export function useAkademi() {
     simpanProgress(newProgress)
   }
 
-  const semuaMateri = level1.materi
-  const totalMateri = semuaMateri.length
-  const materiSelesai = progress.materiSelesai.length
-  const progressPersen = Math.round((materiSelesai / totalMateri) * 100)
-  const levelSelesai = materiSelesai === totalMateri
+  const hitungLevelSelesai = (lvId) => {
+    const lv = LEVELS.find((l) => l.level === lvId)
+    if (!lv) return 0
+    return (progress.materiSelesai[lvId] || []).length
+  }
 
   return {
-    level: level1,
+    level,
+    levels: LEVELS,
     progress,
     semuaMateri,
     totalMateri,
     materiSelesai,
     progressPersen,
     levelSelesai,
+    levelSebelumnyaSelesai,
     tandaiSelesai,
     simpanSkorKuis,
+    hitungLevelSelesai,
     refresh: load,
   }
 }
