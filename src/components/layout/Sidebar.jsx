@@ -4,6 +4,7 @@ const menuItems = [
   { path: '/', label: 'Dashboard', icon: '📊' },
   { path: '/misi', label: 'Misi Harian', icon: '🎯' },
   { path: '/akademi', label: 'Akademi Trading', icon: '🎓' },
+  { path: '/sertifikat', label: 'Sertifikat', icon: '🏆' },
   { path: '/doa-pagi', label: 'Doa & Mantra Pagi', icon: '🌅' },
   { path: '/syukur', label: 'Jurnal Syukur', icon: '🙏' },
   { path: '/watchlist', label: 'Watchlist', icon: '⭐' },
