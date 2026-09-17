@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import Layout from './components/layout/Layout'
 import Dashboard from './pages/Dashboard'
 import Simulasi from './pages/Simulasi'
+import SimulasiLanjutan from './pages/SimulasiLanjutan'
 import Jurnal from './pages/Jurnal'
 import Analisis from './pages/Analisis'
 import DosaDagang from './pages/DosaDagang'
@@ -46,6 +47,7 @@ function App() {
         <Route path="/syukur" element={<Syukur />} />
         <Route path="/doa-pagi" element={<DoaPagi />} />
         <Route path="/simulasi" element={<Simulasi />} />
+        <Route path="/simulasi-lanjutan" element={<SimulasiLanjutan />} />
         <Route path="/jurnal" element={<Jurnal />} />
         <Route path="/analisis" element={<Analisis />} />
         <Route path="/dosa" element={<DosaDagang />} />
