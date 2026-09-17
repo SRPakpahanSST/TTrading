@@ -1,0 +1,14 @@
+{
+  "versi": "TB",
+  "terakhirDiperbarui": "2026-09-16",
+  "ayat": [
+    {
+      "id": 121,
+      "kitab": "Contoh Kitab",
+      "pasal": 1,
+      "ayat": 1,
+      "tema": "Contoh Tema",
+      "teks": "Isi ayat baru Anda di sini. Cukup tambahkan objek baru di dalam array ini."
+    }
+  ]
+}
