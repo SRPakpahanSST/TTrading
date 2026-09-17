@@ -1,0 +1,437 @@
+{
+  "level": 1,
+  "namaLevel": "Pemula",
+  "deskripsi": "Dasar-dasar saham, reksa dana, dan cara memulai investasi.",
+  "badgeSelesai": "pemula",
+  "materi": [
+    {
+      "id": "L1M1",
+      "judul": "Apa Itu Saham?",
+      "durasi": "5 menit",
+      "icon": "📈",
+      "konten": [
+        {
+          "tipe": "paragraf",
+          "teks": "Saham adalah bukti kepemilikan seseorang atas sebagian kecil dari sebuah perusahaan. Ketika Anda membeli saham, Anda resmi menjadi salah satu pemilik perusahaan tersebut."
+        },
+        {
+          "tipe": "paragraf",
+          "teks": "Misalnya, Anda membeli 1 lot saham BRIS (Bank Syariah Indonesia) di harga Rp 1.800 per lembar. 1 lot = 100 lembar. Maka Anda mengeluarkan Rp 180.000 dan resmi menjadi pemegang saham BRIS."
+        },
+        {
+          "tipe": "heading",
+          "teks": "Kenapa Saham Menarik?"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "Potensi keuntungan tinggi melalui capital gain (selisih harga beli dan jual)",
+            "Mendapat dividen (bagi hasil laba perusahaan)",
+            "Mudah dijual kembali (likuid)",
+            "Bisa dimulai dengan modal kecil (Rp 100.000)"
+          ]
+        },
+        {
+          "tipe": "heading",
+          "teks": "Risiko Saham"
+        },
+        {
+          "tipe": "paragraf",
+          "teks": "Harga saham bisa naik dan turun. Jika perusahaan merugi, harga sahamnya bisa turun drastis. Karena itu, penting untuk memilih perusahaan dengan fundamental yang kuat."
+        },
+        {
+          "tipe": "highlight",
+          "teks": "Hati adalah grafik Candlestick terbesar. Kalau hati kacau, pasar sejelas apa pun akan sia-sia."
+        }
+      ],
+      "rangkuman": [
+        "Saham = bukti kepemilikan perusahaan",
+        "1 lot = 100 lembar saham",
+        "Keuntungan dari capital gain + dividen",
+        "Risiko: harga bisa turun"
+      ],
+      "kuis": [
+        {
+          "soal": "Apa arti memiliki saham sebuah perusahaan?",
+          "pilihan": [
+            "Menjadi karyawan perusahaan",
+            "Menjadi pemilik sebagian perusahaan",
+            "Menjadi pelanggan perusahaan",
+            "Menjadi pemasok perusahaan"
+          ],
+          "jawaban": 1,
+          "penjelasan": "Saham adalah bukti kepemilikan. Anda memiliki sebagian kecil perusahaan tersebut."
+        },
+        {
+          "soal": "Jika Anda membeli 1 lot saham di harga Rp 2.000/lembar, berapa yang Anda keluarkan?",
+          "pilihan": [
+            "Rp 2.000",
+            "Rp 20.000",
+            "Rp 200.000",
+            "Rp 2.000.000"
+          ],
+          "jawaban": 2,
+          "penjelasan": "1 lot = 100 lembar. 100 × Rp 2.000 = Rp 200.000."
+        },
+        {
+          "soal": "Apa sumber keuntungan dari saham?",
+          "pilihan": [
+            "Hanya dividen",
+            "Hanya capital gain",
+            "Capital gain & dividen",
+            "Bunga bank"
+          ],
+          "jawaban": 2,
+          "penjelasan": "Keuntungan saham berasal dari capital gain (selisih harga) dan dividen (bagi laba)."
+        }
+      ]
+    },
+    {
+      "id": "L1M2",
+      "judul": "Apa Itu Reksa Dana?",
+      "durasi": "5 menit",
+      "icon": "💼",
+      "konten": [
+        {
+          "tipe": "paragraf",
+          "teks": "Reksa dana adalah wadah investasi yang mengumpulkan dana dari banyak investor, lalu dikelola oleh manajer investasi profesional."
+        },
+        {
+          "tipe": "heading",
+          "teks": "Jenis Reksa Dana"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "Reksa Dana Pasar Uang — risiko paling rendah, cocok jangka pendek",
+            "Reksa Dana Pendapatan Tetap — risiko sedang, cocok jangka menengah",
+            "Reksa Dana Campuran — kombinasi saham & obligasi",
+            "Reksa Dana Saham — risiko tinggi, potensi untung besar"
+          ]
+        },
+        {
+          "tipe": "heading",
+          "teks": "Keunggulan Reksa Dana"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "Modal kecil (mulai Rp 10.000)",
+            "Dikelola profesional",
+            "Diversifikasi otomatis",
+            "Cocok untuk pemula"
+          ]
+        },
+        {
+          "tipe": "highlight",
+          "teks": "Untuk pemula, mulai dari reksa dana adalah pilihan bijak. Risiko lebih terkendali."
+        }
+      ],
+      "rangkuman": [
+        "Reksa dana = wadah investasi kolektif",
+        "Dikelola manajer investasi profesional",
+        "Modal kecil, risiko beragam",
+        "Cocok untuk pemula"
+      ],
+      "kuis": [
+        {
+          "soal": "Siapa yang mengelola reksa dana?",
+          "pilihan": [
+            "Investor sendiri",
+            "Manajer investasi",
+            "Pemerintah",
+            "Bank Indonesia"
+          ],
+          "jawaban": 1,
+          "penjelasan": "Reksa dana dikelola oleh manajer investasi profesional."
+        },
+        {
+          "soal": "Reksa dana dengan risiko paling rendah adalah?",
+          "pilihan": [
+            "Reksa Dana Saham",
+            "Reksa Dana Campuran",
+            "Reksa Dana Pasar Uang",
+            "Reksa Dana Pendapatan Tetap"
+          ],
+          "jawaban": 2,
+          "penjelasan": "Reksa Dana Pasar Uang memiliki risiko paling rendah."
+        },
+        {
+          "soal": "Minimal investasi reksa dana di Ajaib adalah?",
+          "pilihan": [
+            "Rp 1.000",
+            "Rp 10.000",
+            "Rp 100.000",
+            "Rp 1.000.000"
+          ],
+          "jawaban": 1,
+          "penjelasan": "Di Ajaib, minimal reksa dana Rp 10.000."
+        }
+      ]
+    },
+    {
+      "id": "L1M3",
+      "judul": "Trading vs Investasi",
+      "durasi": "7 menit",
+      "icon": "⚖️",
+      "konten": [
+        {
+          "tipe": "paragraf",
+          "teks": "Banyak yang bingung membedakan trading dan investasi. Keduanya sama-sama di pasar saham, tapi pendekatannya berbeda."
+        },
+        {
+          "tipe": "heading",
+          "teks": "Investasi (Jangka Panjang)"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "Fokus: pertumbuhan nilai dalam 3-5 tahun",
+            "Strategi: beli dan tahan (buy & hold)",
+            "Analisis: fundamental perusahaan",
+            "Frekuensi: jarang trading",
+            "Cocok: pemula, pekerja sibuk"
+          ]
+        },
+        {
+          "tipe": "heading",
+          "teks": "Trading (Jangka Pendek)"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "Fokus: profit dari fluktuasi harga",
+            "Strategi: beli-jual cepat (harian/mingguan)",
+            "Analisis: teknikal + sentimen",
+            "Frekuensi: sering trading",
+            "Cocok: trader berpengalaman"
+          ]
+        },
+        {
+          "tipe": "highlight",
+          "teks": "Untuk pemula, MULAI dari INVESTASI. Setelah paham, baru coba trading dengan modal kecil."
+        },
+        {
+          "tipe": "heading",
+          "teks": "7 Dosa Dagang"
+        },
+        {
+          "tipe": "paragraf",
+          "teks": "Trading dan investasi sama-sama rentan terhadap 7 dosa dagang: keserakahan, ketakutan, harapan, penyesalan, kesombongan, keraguan, dan kebingungan."
+        }
+      ],
+      "rangkuman": [
+        "Investasi = jangka panjang (3-5 tahun)",
+        "Trading = jangka pendek (harian/mingguan)",
+        "Pemula sebaiknya mulai dari investasi",
+        "Keduanya rentan 7 dosa dagang"
+      ],
+      "kuis": [
+        {
+          "soal": "Apa perbedaan utama investasi dan trading?",
+          "pilihan": [
+            "Investasi lebih cepat untung",
+            "Trading lebih aman",
+            "Investasi jangka panjang, trading jangka pendek",
+            "Tidak ada perbedaan"
+          ],
+          "jawaban": 2,
+          "penjelasan": "Investasi fokus jangka panjang, trading fokus jangka pendek."
+        },
+        {
+          "soal": "Untuk pemula, sebaiknya mulai dari?",
+          "pilihan": [
+            "Day trading",
+            "Investasi jangka panjang",
+            "Margin trading",
+            "Spekulasi"
+          ],
+          "jawaban": 1,
+          "penjelasan": "Pemula sebaiknya mulai dari investasi jangka panjang yang lebih aman."
+        },
+        {
+          "soal": "Apa itu 'buy and hold'?",
+          "pilihan": [
+            "Beli lalu jual cepat",
+            "Beli lalu tahan lama",
+            "Beli lalu tahan sebentar",
+            "Beli lalu simpan di bank"
+          ],
+          "jawaban": 1,
+          "penjelasan": "Buy and hold adalah strategi membeli saham lalu menahannya dalam jangka panjang."
+        }
+      ]
+    },
+    {
+      "id": "L1M4",
+      "judul": "Cara Buka Rekening Saham",
+      "durasi": "5 menit",
+      "icon": "📱",
+      "konten": [
+        {
+          "tipe": "paragraf",
+          "teks": "Untuk mulai trading saham, Anda perlu membuka rekening efek di sekuritas yang terdaftar di OJK."
+        },
+        {
+          "tipe": "heading",
+          "teks": "Langkah-Langkah"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "Download aplikasi sekuritas (Ajaib, Stockbit, IPOT, dll.)",
+            "Daftar dengan email & nomor HP",
+            "Verifikasi identitas (KTP + selfie)",
+            "Lengkapi data (NPWP jika ada)",
+            "Tunggu verifikasi (1x24 jam)",
+            "Deposit dana ke RDN (Rekening Dana Nasabah)",
+            "Mulai trading!"
+          ]
+        },
+        {
+          "tipe": "heading",
+          "teks": "Dokumen yang Dibutuhkan"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "KTP (wajib)",
+            "NPWP (opsional, untuk pajak lebih rendah)",
+            "Buku tabungan (untuk verifikasi)",
+            "Selfie dengan KTP"
+          ]
+        },
+        {
+          "tipe": "highlight",
+          "teks": "Pastikan sekuritas terdaftar di OJK. Cek di website OJK untuk daftar resminya."
+        }
+      ],
+      "rangkuman": [
+        "Buka rekening di sekuritas terdaftar OJK",
+        "Dokumen: KTP, NPWP (opsional), selfie",
+        "Verifikasi 1x24 jam",
+        "Deposit ke RDN, lalu trading"
+      ],
+      "kuis": [
+        {
+          "soal": "Di mana Anda harus membuka rekening untuk trading saham?",
+          "pilihan": [
+            "Bank",
+            "Sekuritas terdaftar OJK",
+            "Kantor pajak",
+            "Koperasi"
+          ],
+          "jawaban": 1,
+          "penjelasan": "Rekening efek harus dibuka di sekuritas yang terdaftar dan diawasi OJK."
+        },
+        {
+          "soal": "Apa itu RDN?",
+          "pilihan": [
+            "Rekening Dana Nasional",
+            "Rekening Dana Nasabah",
+            "Rekening Dagang Negara",
+            "Rekening Digital"
+          ],
+          "jawaban": 1,
+          "penjelasan": "RDN = Rekening Dana Nasabah, tempat dana trading Anda disimpan."
+        },
+        {
+          "soal": "Dokumen wajib untuk buka rekening saham?",
+          "pilihan": [
+            "SIM",
+            "KTP",
+            "Paspor",
+            "Kartu pelajar"
+          ],
+          "jawaban": 1,
+          "penjelasan": "KTP adalah dokumen wajib untuk verifikasi identitas."
+        }
+      ]
+    },
+    {
+      "id": "L1M5",
+      "judul": "Cara Membaca Ticker Saham",
+      "durasi": "7 menit",
+      "icon": "📊",
+      "konten": [
+        {
+          "tipe": "paragraf",
+          "teks": "Ticker saham adalah kode 4 huruf yang mewakili sebuah perusahaan di bursa. Misalnya BBCA, BBRI, TLKM, BRIS."
+        },
+        {
+          "tipe": "heading",
+          "teks": "Membaca Ticker di Aplikasi"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "Kode saham (4 huruf) — misal: BRIS",
+            "Harga terakhir — misal: Rp 1.800",
+            "Perubahan harga — misal: +2,5%",
+            "Volume transaksi — jumlah lembar yang ditradingkan",
+            "Nilai transaksi — total rupiah"
+          ]
+        },
+        {
+          "tipe": "heading",
+          "teks": "Istilah Penting"
+        },
+        {
+          "tipe": "list",
+          "items": [
+            "Bid — harga beli terbaik saat ini",
+            "Offer — harga jual terbaik saat ini",
+            "Lot — satuan transaksi (1 lot = 100 lembar)",
+            "ARA — Auto Reject Atas (batas naik maksimal)",
+            "ARB — Auto Reject Bawah (batas turun maksimal)"
+          ]
+        },
+        {
+          "tipe": "highlight",
+          "teks": "Jangan panik saat harga turun. Cek dulu: apakah fundamentalnya masih baik?"
+        }
+      ],
+      "rangkuman": [
+        "Ticker = kode 4 huruf perusahaan",
+        "Bid = harga beli, Offer = harga jual",
+        "1 lot = 100 lembar",
+        "ARA/ARB = batas naik/turun harian"
+      ],
+      "kuis": [
+        {
+          "soal": "Berapa huruf kode ticker saham di BEI?",
+          "pilihan": [
+            "2 huruf",
+            "3 huruf",
+            "4 huruf",
+            "5 huruf"
+          ],
+          "jawaban": 2,
+          "penjelasan": "Kode ticker saham di BEI terdiri dari 4 huruf, contoh: BBCA, BBRI, TLKM."
+        },
+        {
+          "soal": "Apa itu 'bid' dalam saham?",
+          "pilihan": [
+            "Harga jual terbaik",
+            "Harga beli terbaik",
+            "Harga rata-rata",
+            "Harga tertinggi"
+          ],
+          "jawaban": 1,
+          "penjelasan": "Bid adalah harga beli terbaik yang tersedia saat ini."
+        },
+        {
+          "soal": "Berapa lembar dalam 1 lot saham?",
+          "pilihan": [
+            "10 lembar",
+            "50 lembar",
+            "100 lembar",
+            "1.000 lembar"
+          ],
+          "jawaban": 2,
+          "penjelasan": "1 lot = 100 lembar saham."
+        }
+      ]
+    }
+  ]
+}
