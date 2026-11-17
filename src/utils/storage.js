@@ -1,41 +1,19 @@
+// src/utils/storage.js
 export const storage = {
-  get: (key, defaultValue = null) => {
+  get: (key, defaultValue) => {
     try {
       const item = localStorage.getItem(key)
       return item ? JSON.parse(item) : defaultValue
-    } catch {
+    } catch (error) {
+      console.error("Error reading localStorage", error)
       return defaultValue
     }
   },
   set: (key, value) => {
     try {
       localStorage.setItem(key, JSON.stringify(value))
-      return true
-    } catch {
-      return false
+    } catch (error) {
+      console.error("Error setting localStorage", error)
     }
-  },
-  remove: (key) => {
-    try {
-      localStorage.removeItem(key)
-      return true
-    } catch {
-      return false
-    }
-  },
-}
-
-export const STORAGE_KEYS = {
-  PORTFOLIO: 'portfolio',
-  PILAR_SCORE: 'pilarScore',
-  JURNAL: 'jurnal',
-  AMAL: 'amal',
-  DOSA: 'dosaLogs',
-  SIMULASI: 'simulasi',
-  SETTINGS: 'settings',
-  WATCHLIST: 'watchlist',
-  STREAK: 'streak',
-  BADGES: 'badges',
-  SYUKUR: 'syukur',
-  LEADERBOARD: 'leaderboard',
+  }
 }
