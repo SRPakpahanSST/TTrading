@@ -28,6 +28,7 @@ import Misi from './pages/Misi'
 import AnalisisTeknikal from './pages/AnalisisTeknikal'
 import StudiDetail from './pages/AnalisisTeknikal/StudiDetail'
 import Sertifikat from './pages/Sertifikat'
+import OrderFlow from './pages/OrderFlow' // ✅ TAMBAHKAN IMPORT INI
 
 function App() {
   return (
@@ -54,6 +55,7 @@ function App() {
         <Route path="/simulasi-lanjutan" element={<SimulasiLanjutan />} />
         <Route path="/analisis-teknikal" element={<AnalisisTeknikal />} />
         <Route path="/analisis-teknikal/:id" element={<StudiDetail />} />
+        <Route path="/orderflow" element={<OrderFlow />} /> {/* ✅ TAMBAHKAN ROUTE INI */}
         <Route path="/jurnal" element={<Jurnal />} />
         <Route path="/analisis" element={<Analisis />} />
         <Route path="/dosa" element={<DosaDagang />} />
