@@ -18,6 +18,7 @@ const menuItems = [
   { path: '/simulasi', label: 'Simulasi', icon: '🎮' },
   { path: '/simulasi-lanjutan', label: 'Simulasi Lanjutan', icon: '🎯' },
   { path: '/analisis-teknikal', label: 'Analisis Teknikal', icon: '📈' },
+  { path: '/orderflow', label: 'Order Flow', icon: '⚖️' }, // ✅ TAMBAHKAN MENU INI
   { path: '/jurnal', label: 'Jurnal', icon: '📓' },
   { path: '/analisis', label: 'Analisis', icon: '📉' },
   { path: '/dosa', label: '7 Dosa Dagang', icon: '🧠' },
