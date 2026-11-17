@@ -6,7 +6,7 @@ Motto: "Hati adalah grafik Candlestick terbesar.",
 Maskot: 🧘 (orang meditasi) atau 🌱 (benih tumbuh), 
 Warna Utama Amber (#f59e0b) — melambangkan kehangatan, kebijaksanaan, dan cahaya.
 
-URL Link Aplikasi:
+URL Link Aplikasi: https://srpakpahansst.github.io/TTrading/
 
 # 🌱 T Trading (Tenang Trading)
 
